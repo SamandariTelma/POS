@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Vente Bundle - Paiement par cheque</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aceb9c45-6adb-4434-ac3e-60a1792c5de4</testCaseGuid>
+</TestCaseEntity>

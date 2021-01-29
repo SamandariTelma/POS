@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Bouton Loupe</name>
+   <tag></tag>
+   <elementGuidId>a27bed6c-1b59-45e4-9733-a71d26ea8c47</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@placeholder='Imei/ICCID/EAN/SN']//following::div[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>mat-icon.text-success.cursor-pointer-search.taille-loupe.mat-icon.material-icons</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>mat-icon</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-success cursor-pointer-search taille-loupe mat-icon material-icons</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>img</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-hidden</name>
+      <type>Main</type>
+      <value>true</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>search</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/app-root[1]/app-pos[@class=&quot;ng-star-inserted&quot;]/nav-menu-pos[@class=&quot;ng-tns-c7-29&quot;]/div[@class=&quot;main-container&quot;]/mat-sidenav-container[@class=&quot;example-sidenav-container mat-drawer-container mat-sidenav-container mat-drawer-transition&quot;]/mat-sidenav-content[@class=&quot;page-wrapper mat-drawer-content mat-sidenav-content ng-tns-c7-29&quot;]/div[@class=&quot;page-content ng-tns-c7-29&quot;]/app-activity[@class=&quot;ng-tns-c16-36 ng-star-inserted&quot;]/div[@class=&quot;ng-tns-c16-36&quot;]/div[@class=&quot;h-100&quot;]/div[@class=&quot;bloc-wrapper ng-tns-c16-36 ng-star-inserted&quot;]/div[@class=&quot;center-content&quot;]/div[@class=&quot;inner-content&quot;]/app-gestion-encaissement[@class=&quot;ng-tns-c20-52 ng-star-inserted&quot;]/div[@class=&quot;ng-tns-c20-52 ng-trigger ng-trigger-toRight&quot;]/app-recherche-article[@class=&quot;ng-star-inserted&quot;]/div[@class=&quot;encaissement&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-lg-4&quot;]/mat-card[@class=&quot;m-0 m-t-10 mat-card&quot;]/mat-card-content[@class=&quot;mat-card-content&quot;]/div[@class=&quot;ng-star-inserted&quot;]/app-bloc-search-article[1]/form[@class=&quot;p-3 ng-untouched ng-pristine ng-valid&quot;]/div[@class=&quot;row justify-content-center&quot;]/div[@class=&quot;full ng-star-inserted&quot;]/mat-form-field[@class=&quot;col-md-8 password-full-width m-b-20 mat-form-field ng-tns-c3-58 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-legacy mat-form-field-can-float mat-form-field-hide-placeholder ng-valid mat-form-field-should-float ng-touched ng-dirty&quot;]/div[@class=&quot;mat-form-field-wrapper&quot;]/div[@class=&quot;mat-form-field-flex&quot;]/div[@class=&quot;mat-form-field-suffix ng-tns-c3-58 ng-star-inserted&quot;]/mat-icon[@class=&quot;text-success cursor-pointer-search taille-loupe mat-icon material-icons&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Imei/ICCID/EAN/SN'])[1]/following::mat-icon[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Type de sérialisation'])[2]/following::mat-icon[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Quantité'])[1]/preceding::mat-icon[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Prix (Ar)'])[1]/preceding::mat-icon[3]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/mat-icon</value>
+   </webElementXpaths>
+</WebElementEntity>

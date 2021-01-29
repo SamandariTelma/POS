@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Bouton Payer</name>
+   <tag></tag>
+   <elementGuidId>cb864bd1-141d-4218-9511-104d174a4050</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button.mat-btn.mat-raised-button.mat-primary.cdk-focused.cdk-mouse-focused</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[contains(text(),'Payer')]//parent::button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mat-btn mat-raised-button mat-primary cdk-focused cdk-mouse-focused</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Payer</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/app-root[1]/app-pos[@class=&quot;ng-star-inserted&quot;]/nav-menu-pos[@class=&quot;ng-tns-c7-29&quot;]/div[@class=&quot;main-container&quot;]/mat-sidenav-container[@class=&quot;example-sidenav-container mat-drawer-container mat-sidenav-container mat-drawer-transition&quot;]/mat-sidenav-content[@class=&quot;page-wrapper mat-drawer-content mat-sidenav-content ng-tns-c7-29&quot;]/div[@class=&quot;page-content ng-tns-c7-29&quot;]/app-activity[@class=&quot;ng-tns-c16-36 ng-star-inserted&quot;]/div[@class=&quot;ng-tns-c16-36&quot;]/div[@class=&quot;h-100&quot;]/div[@class=&quot;bloc-wrapper ng-tns-c16-36 ng-star-inserted&quot;]/div[@class=&quot;center-content&quot;]/div[@class=&quot;inner-content&quot;]/app-gestion-encaissement[@class=&quot;ng-tns-c20-93 ng-star-inserted&quot;]/div[@class=&quot;ng-tns-c20-93 ng-trigger ng-trigger-toRight&quot;]/app-recherche-article[@class=&quot;ng-star-inserted&quot;]/div[@class=&quot;encaissement&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-lg-8&quot;]/app-panier[1]/mat-card[@class=&quot;m-0 m-t-10 mat-card&quot;]/mat-card-content[@class=&quot;p-b-0 mat-card-content&quot;]/mat-card-actions[@class=&quot;mat-card-actions p-0 text-right ng-star-inserted&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-lg-10&quot;]/button[@class=&quot;mat-btn mat-raised-button mat-primary cdk-focused cdk-mouse-focused&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//button[@type='button'])[10]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Abandonner'])[1]/following::button[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)=concat('Retour à l', &quot;'&quot;, 'accueil')])[1]/following::button[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Recherche des Articles'])[1]/preceding::button[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//mat-card-actions/div/div[2]/button[3]</value>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Connexion a POS avec utilisateur n ayant pas une caisse ouverte</name>
+   <tag></tag>
+   <comment>Vérification des éléments de la Home Page n ayant pas une caisse ouverte
+Vérification de l'absence des éléments de la Home Page ayant une caisse ouverte</comment>
+   <testCaseGuid>6fd64634-e5ae-4be9-b573-e43d4d6cdb40</testCaseGuid>
+</TestCaseEntity>

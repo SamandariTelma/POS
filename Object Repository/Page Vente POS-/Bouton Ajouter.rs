@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Bouton Ajouter</name>
+   <tag></tag>
+   <elementGuidId>a6bb654a-82bd-44c4-af28-6b7521ec22e3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button.mat-raised-button.mat-accent.cdk-focused.cdk-mouse-focused</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[contains(text(),'Ajouter')]//parent::span//parent::button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>color</name>
+      <type>Main</type>
+      <value>accent</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mat-raised-button mat-accent cdk-focused cdk-mouse-focused</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Ajouter</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/app-root[1]/app-pos[@class=&quot;ng-star-inserted&quot;]/nav-menu-pos[@class=&quot;ng-tns-c7-29&quot;]/div[@class=&quot;main-container&quot;]/mat-sidenav-container[@class=&quot;example-sidenav-container mat-drawer-container mat-sidenav-container mat-drawer-transition&quot;]/mat-sidenav-content[@class=&quot;page-wrapper mat-drawer-content mat-sidenav-content ng-tns-c7-29&quot;]/div[@class=&quot;page-content ng-tns-c7-29&quot;]/app-activity[@class=&quot;ng-tns-c16-36 ng-star-inserted&quot;]/div[@class=&quot;ng-tns-c16-36&quot;]/div[@class=&quot;h-100&quot;]/div[@class=&quot;bloc-wrapper ng-tns-c16-36 ng-star-inserted&quot;]/div[@class=&quot;center-content&quot;]/div[@class=&quot;inner-content&quot;]/app-gestion-encaissement[@class=&quot;ng-tns-c20-93 ng-star-inserted&quot;]/div[@class=&quot;ng-tns-c20-93 ng-trigger ng-trigger-toRight&quot;]/app-recherche-article[@class=&quot;ng-star-inserted&quot;]/div[@class=&quot;encaissement&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-lg-4&quot;]/mat-card[@class=&quot;m-0 m-t-10 mat-card&quot;]/mat-card-content[@class=&quot;mat-card-content&quot;]/div[@class=&quot;ng-star-inserted&quot;]/app-bloc-search-article[1]/form[@class=&quot;p-3 ng-untouched ng-pristine ng-valid&quot;]/div[@class=&quot;row justify-content-center&quot;]/mat-card-actions[@class=&quot;mat-card-actions p-0 text-right&quot;]/button[@class=&quot;mat-raised-button mat-accent cdk-focused cdk-mouse-focused&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Prix (Ar)'])[1]/following::button[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::button[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//mat-card-actions/button</value>
+   </webElementXpaths>
+</WebElementEntity>

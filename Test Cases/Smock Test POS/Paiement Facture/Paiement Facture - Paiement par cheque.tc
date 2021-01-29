@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Paiement Facture - Paiement par cheque</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e2662a30-fb05-4b94-b4f6-4ed3f9560db2</testCaseGuid>
+</TestCaseEntity>

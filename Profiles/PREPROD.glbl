@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>PREPROD</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>A definir</description>
+      <initValue>'https://tapq404lv/pos/login'</initValue>
+      <name>urlPreprod</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>A definir</description>
+      <initValue>'postest'</initValue>
+      <name>loginUsername</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>A definir</description>
+      <initValue>'P@ssWord@2020*'</initValue>
+      <name>loginPassword</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>A definir</description>
+      <initValue>'Samandari'</initValue>
+      <name>loginUsernameNoCaisse</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>A definir</description>
+      <initValue>'Thas4e@1422'</initValue>
+      <name>loginPasswordNoCaisse</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>A definir</description>
+      <initValue>'Samandari'</initValue>
+      <name>loginUsernameOpenedCaisse</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>A definir</description>
+      <initValue>'Thas4e@1422'</initValue>
+      <name>loginPasswordOpenedCaisse</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>A definir</description>
+      <initValue>'FINV/00120617/17'</initValue>
+      <name>numeroFacture</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'8926104251911668533'</initValue>
+      <name>numeroArticle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1000'</initValue>
+      <name>montantArticle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'201230050943100025'</initValue>
+      <name>referenceDeTransaction</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1000'</initValue>
+      <name>resteAPayer</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>' '</initValue>
+      <name>numeroIMEI</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>' '</initValue>
+      <name>codeSageIMEI</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>' '</initValue>
+      <name>libelleIMEI</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>' '</initValue>
+      <name>prixIMEI</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>' '</initValue>
+      <name>codeArticleIMEI</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>' '</initValue>
+      <name>numeroSN</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>' '</initValue>
+      <name>codeSageSN</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>' '</initValue>
+      <name>libelleSN</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>' '</initValue>
+      <name>prixSN</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>' '</initValue>
+      <name>codeArticleSN</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>' '</initValue>
+      <name>numeroICCID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>' '</initValue>
+      <name>codeSageICCID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>' '</initValue>
+      <name>libelleICCID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>' '</initValue>
+      <name>prixICCID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>' '</initValue>
+      <name>codeArticleICCID</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
