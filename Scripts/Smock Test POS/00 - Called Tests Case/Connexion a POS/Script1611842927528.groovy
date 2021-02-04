@@ -28,6 +28,8 @@ WebUI.navigateToUrl(GlobalVariable.urlPreprod)
 WebUI.waitForElementPresent(findTestObject('Page Login POS-/Champ de saisie identifiant'), 3)
 
 'Saisir le bon identifiant'
+WebUI.delay(0.500)
+
 WebUI.setText(findTestObject('Page Login POS-/Champ de saisie identifiant'), GlobalVariable.loginUsername)
 
 'Saisir le bon mot de passe'
@@ -44,9 +46,6 @@ WebUI.delay(3)
 //WebUI.delay(10)
 //'Verifier qu\' on est connecté'
 //WebUI.waitForElementPresent(findTestObject('null'), 0)
-WebUI.waitForAlert(5)
-
-WebUI.verifyAlertPresent(5)
 
 /*
 Robot rb = new Robot()
@@ -59,7 +58,12 @@ rb.keyPress(KeyEvent.VK_ENTER)
 
 WebUI.delay(2)
 */
-WebUI.acceptAlert()
+
+//WebUI.waitForAlert(5)
+
+//WebUI.verifyAlertPresent(5)
+
+//WebUI.acceptAlert()
 
 WebUI.delay(2)
 

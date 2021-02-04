@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Smock 01</name>
+   <name>test</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,11 +10,11 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>b455b128-d5a7-4448-b680-1ca84945d57a</testSuiteGuid>
+   <testSuiteGuid>9de94897-b3b0-4a98-907f-28e83f0f3df7</testSuiteGuid>
    <testCaseLink>
-      <guid>577351d9-6d93-47f0-9f1d-a6c6946e69a6</guid>
+      <guid>f76bd0ad-e75d-4546-9536-31a10167603b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Smock Test POS/05 - Vente Bundle/Vente Bundle - Paiement en espece</testCaseId>
+      <testCaseId>Test Cases/Smock Test POS/Test/New Test Case</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
