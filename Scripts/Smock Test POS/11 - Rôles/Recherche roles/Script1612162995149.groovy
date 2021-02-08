@@ -17,6 +17,10 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import org.openqa.selenium.WebElement as WebElement
+import java.awt.event.KeyEvent as KeyEvent
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebDriver as WebDriver
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 'Se connecter à POS'
 WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Connexion a POS'), [:], FailureHandling.CONTINUE_ON_FAILURE)
@@ -81,6 +85,8 @@ WebUI.verifyElementNotChecked(findTestObject('Page Gestion des rôles/Recherche 
 'Cliquer sur le bouton Rechercher'
 WebUI.click(findTestObject('Page Gestion des rôles/Bouton Rechercher'))
 
+WebUI.delay(0.500)
+
 WebUI.waitForElementPresent(findTestObject('Page Gestion des rôles/Tableau de résultat/Actif premiere ligne'), 3)
 
 'Vérifier que les résultats adéquats au champ recherché apparaissent dans la liste des rôles'
@@ -110,6 +116,8 @@ WebUI.verifyElementChecked(findTestObject('Page Gestion des rôles/Recherche Ava
 'Cliquer sur le bouton Rechercher'
 WebUI.click(findTestObject('Page Gestion des rôles/Bouton Rechercher'))
 
+WebUI.delay(0.500)
+
 WebUI.waitForElementPresent(findTestObject('Page Gestion des rôles/Tableau de résultat/Actif premiere ligne'), 3)
 
 'Vérifier que les résultats adéquats au champ recherché apparaissent dans la liste des rôles'
@@ -130,6 +138,8 @@ WebUI.sendKeys(findTestObject('Page Gestion des rôles/Recherche Avancée/Champ 
 
 'Cliquer sur le bouton Rechercher'
 WebUI.click(findTestObject('Page Gestion des rôles/Bouton Rechercher'))
+
+WebUI.delay(0.500)
 
 WebUI.waitForElementPresent(findTestObject('Page Gestion des rôles/Tableau de résultat/Actif premiere ligne'), 3)
 
@@ -152,10 +162,13 @@ WebUI.sendKeys(findTestObject('Page Gestion des rôles/Recherche Avancée/Champ 
 'Cliquer sur le bouton Rechercher'
 WebUI.click(findTestObject('Page Gestion des rôles/Bouton Rechercher'))
 
+WebUI.delay(0.500)
+
 //Récupération des résultats pour la colonne Actif
 'Vérifier que tous les résultats s affichent et le colonne Actif sont contient oui'
 List<WebElement> colonne_Actif = WebUiCommonHelper.findWebElements(findTestObject('Page Gestion des rôles/Tableau de résultat/Colonne Actif'), 
     6)
+
 WebUI.verifyGreaterThan(colonne_Actif.size(), 5)
 
 for (def actif : colonne_Actif) {

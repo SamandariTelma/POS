@@ -71,7 +71,7 @@ WebUI.click(findTestObject('Page Gestion des articles non sérialisé/Formulaire
 
 'Cliquer sur le bouton Rechercher'
 WebUI.click(findTestObject('Page Gestion des articles non sérialisé/Bouton Rechercher'), FailureHandling.CONTINUE_ON_FAILURE)
-
+WebUI.delay(0.500)
 //Récupération des résultats pour la colonne Dépôt
 'Vérifier que la colonne dépôt contient uniquement le résultat SHOP TEST DSI'
 List<WebElement> colonne_Depot = WebUiCommonHelper.findWebElements(findTestObject('Page Gestion des articles non sérialisé/Résultat Liste/Colonne Depot'), 
@@ -134,6 +134,7 @@ WebUI.click(findTestObject('Page Gestion des articles non sérialisé/Formulaire
 
 'Cliquer sur le bouton Rechercher'
 WebUI.click(findTestObject('Page Gestion des articles non sérialisé/Bouton Rechercher'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.delay(0.500)
 
 'Vérifier q aucun résultat s affiche sur la liste'
 WebUI.verifyElementNotPresent(findTestObject('Page Gestion des articles non sérialisé/Résultat Liste/Depot 1ere ligne'), 
@@ -179,6 +180,8 @@ WebUI.sendKeys(findTestObject('Page Gestion des articles non sérialisé/Formula
 
 'Cliquer sur le bouton Rechercher'
 WebUI.click(findTestObject('Page Gestion des articles non sérialisé/Bouton Rechercher'))
+
+WebUI.delay(0.500)
 
 WebUI.waitForElementPresent(findTestObject('Page Gestion des articles non sérialisé/Résultat Liste/Depot 1ere ligne'), 0)
 

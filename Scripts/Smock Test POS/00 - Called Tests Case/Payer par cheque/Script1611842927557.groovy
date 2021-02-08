@@ -15,7 +15,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-
 'Cliquer sur le bouton Payer'
 WebUI.click(findTestObject('Page Vente POS-/Bouton Payer'))
 
@@ -67,6 +66,8 @@ WebUI.click(findTestObject('Page Encaissement-/Bouton Clear avec icon croix roug
 
 'Choisir l onglet MVola'
 WebUI.click(findTestObject('Page Encaissement-/Onglet MVola'))
+
+WebUI.delay(0.500)
 
 'Entrer un numéro de téléphone non valide et un montant qui dépasse le montant voulu'
 WebUI.sendKeys(findTestObject('Page Encaissement-/Champ Numero MVola'), ' 0030816')
@@ -157,7 +158,6 @@ WebUI.click(findTestObject('Page Vente POS-/Bouton Payer'))
 'Supprimer le montant de la liste'
 WebUI.waitForElementPresent(findTestObject('Page Encaissement-/Bouton Ajouter Paiement'), 0)
 
-
 WebUI.click(findTestObject('Page Encaissement-/Bouton Clear avec icon croix rouge'))
 
 //Paiement par cheque
@@ -174,8 +174,8 @@ WebUI.click(findTestObject('Page Encaissement-/Option Banque BMOI'))
 'Saisir un montant supérieur au montant voulu'
 WebUI.sendKeys(findTestObject('Page Encaissement-/Champ Montant'), Integer.toString(montantAPayer) + '.00' //ex: 1000.00
     )
-//Paiement par cheque
 
+//Paiement par cheque
 'Cliquer sur le bouton Ajouter Paiement'
 WebUI.click(findTestObject('Page Encaissement-/Bouton Ajouter Paiement'))
 

@@ -37,6 +37,8 @@ WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert
 
 WebUI.scrollToElement(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Vente bundle'), 0, FailureHandling.STOP_ON_FAILURE)
 
+WebUI.delay(0.500)
+
 WebUI.click(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Vente bundle'))
 
 'Cliquer sur la catégorie de vente NET\r\n'
@@ -71,6 +73,9 @@ WebUI.verifyElementClickable(findTestObject('Page Vente POS-/Bouton Ajouter'))
 
 'Cliquer sur le bouton Ajouter'
 WebUI.click(findTestObject('Page Vente POS-/Bouton Ajouter'))
+
+'Vérifier que l article est ajouter dans le pannier en cours'
+WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Produit ajouter en Panier en cours'), 3)
 
 'Vérifier que l article est ajouter dans le pannier en cours'
 WebUI.verifyElementText(findTestObject('Page Vente POS-/Produit ajouter en Panier en cours'), 'NET ONE DAY\nBundle')

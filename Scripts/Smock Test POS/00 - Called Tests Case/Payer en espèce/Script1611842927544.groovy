@@ -15,7 +15,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-
 'Cliquer sur le bouton Payer'
 WebUI.click(findTestObject('Page Vente POS-/Bouton Payer'))
 
@@ -68,13 +67,15 @@ WebUI.click(findTestObject('Page Encaissement-/Bouton Clear avec icon croix roug
 'Choisir l onglet MVola'
 WebUI.click(findTestObject('Page Encaissement-/Onglet MVola'))
 
+WebUI.delay(0.500)
+
 'Entrer un numéro de téléphone non valide et un montant qui dépasse le montant voulu'
 WebUI.sendKeys(findTestObject('Page Encaissement-/Champ Numero MVola'), ' 0030816')
 
 WebUI.sendKeys(findTestObject('Page Encaissement-/Champ Montant'), Integer.toString(montantAPayer + 1))
 
 'Vérifier qu un message d erreur apparaît en bas du champ'
-WebUI.waitForElementPresent(findTestObject('Page Encaissement-/Message d erreur montant MVola'), 0)
+WebUI.waitForElementPresent(findTestObject('Page Encaissement-/Message d erreur montant MVola'), 3)
 
 WebUI.verifyElementText(findTestObject('Page Encaissement-/Message d erreur montant MVola'), 'Le montant MVola doit être inférieur ou égal au reste à payer.')
 

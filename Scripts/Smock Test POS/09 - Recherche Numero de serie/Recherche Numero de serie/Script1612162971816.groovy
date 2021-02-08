@@ -35,6 +35,8 @@ WebUI.waitForElementPresent(findTestObject('Page Gestion des Numéros de Série-
 
 //RECHERCHE des produits IMEI
 'Dans l onglet IMEI, remplir les champs importants '
+WebUI.delay(0.500)
+
 WebUI.sendKeys(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Champ Article'), GlobalVariable.codeArticleIMEI)
 
 WebUI.sendKeys(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Champ Code Sage'), GlobalVariable.codeSageIMEI)
@@ -58,12 +60,14 @@ WebUI.waitForElementPresent(findTestObject('Page Gestion des Numéros de Série-
 
 WebUI.click(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Checkbox DISPO'))
 
-WebUI.click(findTestObject('Element vide'))
+WebUI.sendKeys(findTestObject('Element vide'), Keys.chord(Keys.ESCAPE))
 
 WebUI.sendKeys(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Champ IMEI'), GlobalVariable.numeroIMEI)
 
 'Cliquer sur le bouton Rechercher'
 WebUI.click(findTestObject('Page Gestion des Numéros de Série-/Bouton Rechercher'))
+
+WebUI.delay(0.500)
 
 WebUI.waitForElementPresent(findTestObject('Page Gestion des Numéros de Série-/Tableau de resultat/IMEI/Code Article premiere ligne'), 
     3)
@@ -117,7 +121,7 @@ WebUI.waitForElementPresent(findTestObject('Page Gestion des Numéros de Série-
 
 WebUI.click(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Checkbox DISPO'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Element vide'))
+WebUI.sendKeys(findTestObject('Element vide'), Keys.chord(Keys.ESCAPE))
 
 WebUI.click(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Champ Depot'))
 
@@ -126,7 +130,7 @@ WebUI.waitForElementPresent(findTestObject('Page Gestion des Numéros de Série-
 
 WebUI.click(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Checkbox SHOP TEST DSI'))
 
-WebUI.click(findTestObject('Element vide'))
+WebUI.sendKeys(findTestObject('Element vide'), Keys.chord(Keys.ESCAPE))
 
 WebUI.sendKeys(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Champ IMEI'), '88888')
 
@@ -134,6 +138,8 @@ WebUI.sendKeys(findTestObject('Page Gestion des Numéros de Série-/Formulaire R
 
 'Cliquer sur le bouton Rechercher'
 WebUI.click(findTestObject('Page Gestion des Numéros de Série-/Bouton Rechercher'))
+
+WebUI.delay(0.500)
 
 'Vérifier q aucun resultat s affiche'
 WebUI.verifyElementNotPresent(findTestObject('Page Gestion des Numéros de Série-/Tableau de resultat/IMEI/Code Article premiere ligne'), 
@@ -190,6 +196,8 @@ WebUI.verifyMatch(all_result_appear, 'true', false)
 'Choisir l onglet SN'
 WebUI.click(findTestObject('Page Gestion des Numéros de Série-/Onglet SN'))
 
+WebUI.delay(0.500)
+
 WebUI.waitForElementPresent(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Champ Article'), 3)
 
 'Remplir les champs importants '
@@ -217,12 +225,14 @@ WebUI.waitForElementPresent(findTestObject('Page Gestion des Numéros de Série-
 
 WebUI.click(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Checkbox DISPO'))
 
-WebUI.click(findTestObject('Element vide'))
+WebUI.sendKeys(findTestObject('Element vide'), Keys.chord(Keys.ESCAPE))
 
 WebUI.sendKeys(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/SN/Champ SN'), GlobalVariable.numeroSN)
 
 'Cliquer sur le bouton Rechercher'
 WebUI.click(findTestObject('Page Gestion des Numéros de Série-/Bouton Rechercher'))
+
+WebUI.delay(0.500)
 
 WebUI.waitForElementPresent(findTestObject('Page Gestion des Numéros de Série-/Tableau de resultat/SN/Code Article premiere ligne'), 
     3)
@@ -272,7 +282,7 @@ WebUI.waitForElementPresent(findTestObject('Page Gestion des Numéros de Série-
 
 WebUI.click(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Checkbox DISPO'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Element vide'))
+WebUI.sendKeys(findTestObject('Element vide'), Keys.chord(Keys.ESCAPE))
 
 WebUI.click(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Champ Depot'))
 
@@ -281,12 +291,14 @@ WebUI.waitForElementPresent(findTestObject('Page Gestion des Numéros de Série-
 
 WebUI.click(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Checkbox SHOP TEST DSI'))
 
-WebUI.click(findTestObject('Element vide'))
+WebUI.sendKeys(findTestObject('Element vide'), Keys.chord(Keys.ESCAPE))
 
 WebUI.sendKeys(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/SN/Champ SN'), '88888')
 
 'Cliquer sur le bouton Rechercher'
 WebUI.click(findTestObject('Page Gestion des Numéros de Série-/Bouton Rechercher'))
+
+WebUI.delay(0.500)
 
 'Vérifier q aucun resultat s affiche'
 WebUI.verifyElementNotPresent(findTestObject('Page Gestion des Numéros de Série-/Tableau de resultat/SN/Code Article premiere ligne'), 
@@ -343,12 +355,14 @@ WebUI.verifyMatch(all_result_appear_SN, 'true', false)
 'Choisir l onglet ICCID'
 WebUI.click(findTestObject('Page Gestion des Numéros de Série-/Onglet ICCID'))
 
+WebUI.delay(0.500)
+
 WebUI.waitForElementPresent(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Champ Article'), 3)
 
 'Remplir les champs importants '
+
 WebUI.waitForElementPresent(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Champ Article'), 3)
 
-'Remplir les champs importants '
 WebUI.sendKeys(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Champ Article'), GlobalVariable.codeArticleICCID)
 
 WebUI.sendKeys(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Champ CodeSage'), GlobalVariable.codeSageICCID)
@@ -370,10 +384,12 @@ WebUI.waitForElementPresent(findTestObject('Page Gestion des Numéros de Série-
 
 WebUI.click(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Checkbox DISPO'))
 
-WebUI.click(findTestObject('Element vide'))
+WebUI.sendKeys(findTestObject('Element vide'), Keys.chord(Keys.ESCAPE))
 
 'Cliquer sur le bouton Rechercher'
 WebUI.click(findTestObject('Page Gestion des Numéros de Série-/Bouton Rechercher'))
+
+WebUI.delay(0.500)
 
 WebUI.waitForElementPresent(findTestObject('Page Gestion des Numéros de Série-/Tableau de resultat/ICCID/Code Article premiere ligne'), 
     3)

@@ -32,18 +32,18 @@ WebUI.click(findTestObject('Popin de Notification/Bouton radio Particulier'))
 WebUI.click(findTestObject('Popin de Notification/Checkbox Par Email'))
 
 'Vérifier l apparition du champ Email'
-WebUI.waitForElementPresent(findTestObject('Popin de Notification/Champ Email'), 0)
+WebUI.waitForElementPresent(findTestObject('Popin de Notification/Champ Email'), 3)
 
 'Saisir l email du client puis valider'
 WebUI.sendKeys(findTestObject('Popin de Notification/Champ Email'), 'samandari.ravelomanantsoa@telma.mg')
 
-WebUI.waitForElementClickable(findTestObject('Popin de Notification/Bouton Terminer'), 0)
+WebUI.waitForElementClickable(findTestObject('Popin de Notification/Bouton Terminer'), 3)
 
 WebUI.click(findTestObject('Popin de Notification/Bouton Terminer'))
 
 'Vérifier la présence du popin Finalisaton de la transaction'
 WebUI.waitForElementPresent(findTestObject('Popin Finalisation de la transaction/Popin Finalisation de la transaction'), 
-    0)
+    3)
 
 'Récupérer la référence de la transaction'
 String info = WebUI.getText(findTestObject('Popin Finalisation de la transaction/Reference de la transaction'))

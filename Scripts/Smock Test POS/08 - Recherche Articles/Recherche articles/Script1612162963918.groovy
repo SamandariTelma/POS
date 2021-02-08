@@ -33,7 +33,11 @@ WebUI.waitForElementPresent(findTestObject('Menu POS-/Sous menu Articles'), 3)
 'Cliquer sur le sous menu Articles'
 WebUI.click(findTestObject('Menu POS-/Sous menu Articles'), FailureHandling.CONTINUE_ON_FAILURE)
 
+WebUI.delay(0.500)
+
 'Remplir les champs par des valeurs incorretes'
+WebUI.waitForElementPresent(findTestObject('Page Gestion des articles/Formulaire Recherche avancée/Champ Article'), 3)
+
 WebUI.sendKeys(findTestObject('Page Gestion des articles/Formulaire Recherche avancée/Champ Article'), '88888')
 
 WebUI.sendKeys(findTestObject('Page Gestion des articles/Formulaire Recherche avancée/Champ Libelle'), '88888')
@@ -108,6 +112,11 @@ WebUI.sendKeys(findTestObject('Page Gestion des articles/Formulaire Recherche av
 'Cliquer sur le bouton Recherche'
 WebUI.click(findTestObject('Page Gestion des articles/Bouton Rechercher'))
 
+WebUI.delay(0.500)
+
+'Vérifier qu aucun résultat apparait dans le tableau'
+WebUI.waitForElementPresent(findTestObject('Page Gestion des articles/Résultat Liste/Code article 1ere ligne'), 3)
+
 'Vérifier qu aucun résultat apparait dans le tableau'
 WebUI.verifyElementNotPresent(findTestObject('Page Gestion des articles/Résultat Liste/Code article 1ere ligne'), 3)
 
@@ -181,6 +190,8 @@ WebUI.sendKeys(findTestObject('Page Gestion des articles/Formulaire Recherche av
 'Cliquer sur le bouton rechercher'
 WebUI.click(findTestObject('Page Gestion des articles/Bouton Rechercher'))
 
+WebUI.delay(0.500)
+
 'Vérifier que le résultat adéquat au champ recherché apparait dans la liste de résultat'
 WebUI.waitForElementPresent(findTestObject('Page Gestion des articles/Résultat Liste/Code article 1ere ligne'), 3)
 
@@ -204,6 +215,8 @@ WebUI.click(findTestObject('Page Gestion des articles/Formulaire Recherche avanc
 
 'Cliquer sur le bouton Rechercher'
 WebUI.click(findTestObject('Page Gestion des articles/Bouton Rechercher'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.delay(0.500)
 
 WebUI.waitForElementPresent(findTestObject('Page Gestion des articles/Résultat Liste/Colonne Entite Juridique'), 0)
 
@@ -231,6 +244,8 @@ WebUI.click(findTestObject('Page Gestion des articles/Formulaire Recherche avanc
 
 'Cliquer sur le bouton Rechercher'
 WebUI.click(findTestObject('Page Gestion des articles/Bouton Rechercher'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.delay(0.500)
 
 WebUI.waitForElementPresent(findTestObject('Page Gestion des articles/Résultat Liste/Colonne Entite Juridique'), 0)
 
