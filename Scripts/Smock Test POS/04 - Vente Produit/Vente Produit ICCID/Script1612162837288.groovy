@@ -37,7 +37,7 @@ WebUI.click(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Nouveau 
 WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Vente produit'), 0)
 
 'Cliquer sur Vente produit'
-WebUI.click(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Vente produit'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Vente produit'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Champ de saisie numero Imei ICCID EAN SN'), 0)
 

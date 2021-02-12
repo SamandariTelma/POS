@@ -12,57 +12,57 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>d3df7425-bd6c-4bb2-b274-ab8d004d90ad</testSuiteGuid>
    <testCaseLink>
-      <guid>a2ba10ec-49df-4e20-8be4-45d7ad360af4</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Smock Test POS/04 - Vente Produit/Prerequis-Recherche Produit</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>a3d1c75b-73f2-46db-9c1a-798e28a0e635</guid>
+      <guid>73ca248a-83b8-4e7f-9125-4727bba89302</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Smock Test POS/01 - Accès/Connexion a POS avec utilisateur ayant une caisse ouverte</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>9c3ffee2-7799-4f97-a9b5-fa675aee337e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Smock Test POS/10 - Article non sérialisé/Recherche article non serialise</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>41d288ea-7e67-4d6f-88b4-5ff86b1df14a</guid>
+      <guid>72550494-84db-4071-b85e-f88fc85cbbd5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Smock Test POS/03 - Journal éléctronique/Journal éléctronique</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>dc0f7971-48c3-46b8-a8e0-7547a6c50462</guid>
+      <guid>db22b8e1-b084-482e-a098-7764860f8c3b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Smock Test POS/08 - Recherche Articles/Recherche articles</testCaseId>
+      <testCaseId>Test Cases/Smock Test POS/04 - Vente Produit/Prerequis-Recherche Produit</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>c3b8a8c2-a16c-489d-a4c3-b70dfe19dbd3</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Smock Test POS/09 - Recherche Numero de serie/Recherche Numero de serie</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>84c01c50-fcf8-478f-a746-7e38b63b3fb9</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Smock Test POS/11 - Rôles/Recherche roles</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f497ae20-851c-4e5e-a6a2-b6fa26436a7f</guid>
+      <guid>bbc8e4b0-d920-47dc-b09a-e08c3708ca9e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Smock Test POS/05 - Vente Bundle/Vente Bundle - Paiement en espece</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>c4da4e9b-2d2c-4931-8242-1961eec70ba1</guid>
+      <guid>a1de2fa4-cea1-4212-9acf-2aae24805146</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Smock Test POS/05 - Vente Bundle/Vente Bundle - Paiement par cheque</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c25cd42f-a809-40ea-bf0f-d3d48082fd09</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Smock Test POS/08 - Recherche Articles/Recherche articles</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>84bbf555-814b-46e0-911d-14fe631b0b9a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Smock Test POS/09 - Recherche Numero de serie/Recherche Numero de serie</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a265a686-4054-4ee8-aeac-f5e48941219c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Smock Test POS/10 - Article non sérialisé/Recherche article non serialise</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>95128b0d-b5bf-46da-baeb-36c15a569da0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Smock Test POS/11 - Rôles/Recherche roles</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

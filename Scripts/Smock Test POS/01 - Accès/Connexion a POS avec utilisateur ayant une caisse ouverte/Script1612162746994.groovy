@@ -38,10 +38,10 @@ WebUI.verifyElementClickable(findTestObject('Page Login POS-/Bouton connecter'))
 'Cliquer sur le bouton connecter'
 WebUI.click(findTestObject('Page Login POS-/Bouton connecter'))
 
-WebUI.waitForAlert(3)
+WebUI.waitForAlert(10)
 
 'Vérifier l apparition d un alerte'
-WebUI.verifyAlertPresent(0)
+WebUI.verifyAlertPresent(10)
 
 'Vérifier le message affiché'
 msg_echec_connexion = WebUI.getAlertText()
@@ -72,15 +72,10 @@ rb.keyPress(KeyEvent.VK_ENTER)
 
 WebUI.delay(2)
 */
-
 //WebUI.waitForAlert(5)
-
 //WebUI.verifyAlertPresent(5)
-
 //WebUI.acceptAlert()
-
 //WebUI.delay(2)
-
 'Vérifier que l utilsateur est connecté et attérit sur la page d acceuil'
 WebUI.comment('Vérification des éléments de la Home Page n ayant pas une caisse ouverte')
 

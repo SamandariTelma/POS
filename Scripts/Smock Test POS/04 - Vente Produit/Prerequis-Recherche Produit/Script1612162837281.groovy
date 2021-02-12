@@ -31,7 +31,7 @@ WebUI.waitForElementPresent(findTestObject('Menu POS-/Sous menu Numros de serie'
 
 //RECHERCHE IMEI
 'Cliquer sur le sous menu Numéros de série'
-WebUI.click(findTestObject('Menu POS-/Sous menu Numros de serie'))
+WebUI.click(findTestObject('Menu POS-/Sous menu Numros de serie'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementPresent(findTestObject('Page Gestion des Numéros de Série-/Onglet ICCID'), 3)
 
@@ -63,6 +63,8 @@ WebUI.delay(6)
 
 'Cliquer sur le bouton Rechercher'
 WebUI.click(findTestObject('Page Gestion des Numéros de Série-/Bouton Rechercher'))
+
+WebUI.delay(0.500)
 
 WebUI.waitForElementPresent(findTestObject('Page Gestion des Numéros de Série-/Tableau de resultat/IMEI/IMEI premiere ligne'), 
     3)

@@ -38,10 +38,10 @@ WebUI.verifyElementClickable(findTestObject('Page Login POS-/Bouton connecter'))
 'Cliquer sur le bouton connecter'
 WebUI.click(findTestObject('Page Login POS-/Bouton connecter'))
 
-WebUI.waitForAlert(3)
+WebUI.waitForAlert(10)
 
 'Vérifier l apparition d un alerte'
-WebUI.verifyAlertPresent(0)
+WebUI.verifyAlertPresent(10)
 
 'Vérifier le message affiché'
 msg_echec_connexion = WebUI.getAlertText()

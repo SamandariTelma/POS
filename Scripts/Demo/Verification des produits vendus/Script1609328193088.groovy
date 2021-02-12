@@ -26,4 +26,4 @@ WebUI.click(findTestObject('Header POS-/Bouton recherche'))
 WebUI.verifyElementText(findTestObject('Page Recherche de tickets-/Reference de la premiere ligne'), GlobalVariable.referenceDeTransaction)
 
 WebUI.delay(700000)
-
+//v1.2

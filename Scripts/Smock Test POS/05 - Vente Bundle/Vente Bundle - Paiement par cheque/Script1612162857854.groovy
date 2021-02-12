@@ -74,6 +74,8 @@ WebUI.verifyElementClickable(findTestObject('Page Vente POS-/Bouton Ajouter'))
 'Cliquer sur le bouton Ajouter'
 WebUI.click(findTestObject('Page Vente POS-/Bouton Ajouter'))
 
+WebUI.delay(0.500)
+
 'Vérifier que l article est ajouter dans le pannier en cours'
 WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Produit ajouter en Panier en cours'), 3)
 

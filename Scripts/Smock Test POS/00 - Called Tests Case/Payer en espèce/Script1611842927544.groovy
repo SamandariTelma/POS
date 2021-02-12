@@ -16,7 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 'Cliquer sur le bouton Payer'
-WebUI.click(findTestObject('Page Vente POS-/Bouton Payer'))
+WebUI.click(findTestObject('Page Vente POS-/Bouton Payer'), FailureHandling.STOP_ON_FAILURE)
 
 'Vérifier que le bouton Ajouter Payement n est pas cliquable'
 WebUI.waitForElementPresent(findTestObject('Page Encaissement-/Bouton Ajouter Paiement'), 0)
@@ -170,5 +170,5 @@ WebUI.click(findTestObject('Page Encaissement-/Bouton Ajouter Paiement'))
 WebUI.verifyElementClickable(findTestObject('Page Encaissement-/Bouton Encaisser'))
 
 'Cliquer sur le bouton Encaisser'
-WebUI.click(findTestObject('Page Encaissement-/Bouton Encaisser'))
+WebUI.click(findTestObject('Page Encaissement-/Bouton Encaisser'),FailureHandling.STOP_ON_FAILURE)
 

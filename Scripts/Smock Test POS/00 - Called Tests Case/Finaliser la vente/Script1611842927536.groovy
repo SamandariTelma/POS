@@ -41,9 +41,14 @@ WebUI.waitForElementClickable(findTestObject('Popin de Notification/Bouton Termi
 
 WebUI.click(findTestObject('Popin de Notification/Bouton Terminer'))
 
+'Vérifier la disparition du popin de Notification'
+WebUI.waitForElementNotPresent(findTestObject('Popin de Notification/Popin Notification'), 10)
+
 'Vérifier la présence du popin Finalisaton de la transaction'
-WebUI.waitForElementPresent(findTestObject('Popin Finalisation de la transaction/Popin Finalisation de la transaction'), 
+WebUI.waitForElementVisible(findTestObject('Popin Finalisation de la transaction/Popin Finalisation de la transaction'), 
     3)
+
+WebUI.delay(1)
 
 'Récupérer la référence de la transaction'
 String info = WebUI.getText(findTestObject('Popin Finalisation de la transaction/Reference de la transaction'))
