@@ -26,18 +26,21 @@ WebUI.deleteAllCookies()
 WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Connexion a POS'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 'Cliquer sur nouveau panier'
+WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Nouveau Panier'), 10)
+
+'Cliquer sur nouveau panier'
 WebUI.click(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Nouveau Panier'))
 
 'Cliquer sur Avance S3\r\n'
-WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Avance S3'), 0)
+WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Avance S3'), 3)
 
 'Cliquer sur vente Avance S3\r\n'
-WebUI.scrollToElement(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Avance S3'), 0)
+WebUI.scrollToElement(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Avance S3'), 3)
 
 WebUI.click(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Avance S3'))
 
 'Atterir sur la page d\'effectuation de vente avec le numéro de l\'id panier et le détails de l\'article. Exemple :\r\n\nLibellé : NET ONE DAY\r\n\nCode : Bundle_00023\r\n\nCode sage : MOBBUNDLE_00023\n"\r\n'
-WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Champ Libelle'), 0)
+WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Champ Libelle'), 3)
 
 WebUI.verifyElementAttributeValue(findTestObject('Page Vente POS-/Champ Libelle'), 'value', 'Paiement avance S3', 0, FailureHandling.CONTINUE_ON_FAILURE)
 

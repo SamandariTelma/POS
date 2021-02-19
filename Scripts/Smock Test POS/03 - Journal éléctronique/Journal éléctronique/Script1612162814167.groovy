@@ -28,13 +28,13 @@ WebUI.deleteAllCookies()
 WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Connexion a POS'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 'Cliquer sur journal électronique'
-WebUI.waitForElementPresent(findTestObject('Header POS-/Lien Journal Electronique'), 0)
+WebUI.waitForElementPresent(findTestObject('Header POS-/Lien Journal Electronique'), 10)
 
 WebUI.click(findTestObject('Header POS-/Lien Journal Electronique'), FailureHandling.STOP_ON_FAILURE)
 
 'Choisir le shop SHOP TEST DSI'
 WebUI.waitForElementPresent(findTestObject('Page Recherche de tickets (Journal Electronique)/Formulaire de recherche/Champ Shop'), 
-    0)
+    3)
 
 WebUI.click(findTestObject('Page Recherche de tickets (Journal Electronique)/Formulaire de recherche/Champ Shop'))
 
@@ -80,7 +80,7 @@ WebUI.sendKeys(findTestObject('Page Recherche de tickets (Journal Electronique)/
 WebUI.click(findTestObject('Page Recherche de tickets (Journal Electronique)/Formulaire de recherche/Bouton Rechercher'))
 
 WebUI.waitForElementPresent(findTestObject('Page Recherche de tickets (Journal Electronique)/Resultat de la recherche/Titre page Resultat de la recherche'), 
-    0)
+    3)
 
 //Récupération des éléments de chaque colonne du tableau
 /*WebDriver driver = DriverFactory.getWebDriver()

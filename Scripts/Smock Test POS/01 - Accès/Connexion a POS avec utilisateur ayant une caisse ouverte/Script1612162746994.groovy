@@ -79,30 +79,30 @@ WebUI.delay(2)
 'Vérifier que l utilsateur est connecté et attérit sur la page d acceuil'
 WebUI.comment('Vérification des éléments de la Home Page n ayant pas une caisse ouverte')
 
-WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Nouveau Panier'), 5)
+WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Nouveau Panier'), 10)
 
 'Vérifier l affichage du Bouton Ouvrir/Fermer TS'
 WebUI.verifyElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Nouveau Panier'), 3)
 
 'Vérifier la présence du Bouton Mes Activités'
-WebUI.verifyElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton S3'), 0)
+WebUI.verifyElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton S3'), 3)
 
 'Vérifier la présence du Bouton Mes résultats'
-WebUI.verifyElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton WebMSA'), 0)
+WebUI.verifyElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton WebMSA'), 3)
 
 'Vérifier la présence du Bouton Mes résultats'
-WebUI.verifyElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Operation MVola'), 0)
+WebUI.verifyElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Operation MVola'), 3)
 
 'Vérifier que les éléments de la Home page ayant un caisse ouvert ne s affichent pas'
 WebUI.comment('Vérification de l\'absence des éléments de la Home Page ayant une caisse ouverte')
 
-WebUI.verifyElementNotPresent(findTestObject('Page d accueil POS-/Si caisse fermé/Bouton Caisse'), 0)
+WebUI.verifyElementNotPresent(findTestObject('Page d accueil POS-/Si caisse fermé/Bouton Caisse'), 3)
 
-WebUI.verifyElementNotPresent(findTestObject('Page d accueil POS-/Si caisse fermé/Bouton Mes Activites'), 0)
+WebUI.verifyElementNotPresent(findTestObject('Page d accueil POS-/Si caisse fermé/Bouton Mes Activites'), 3)
 
-WebUI.verifyElementNotPresent(findTestObject('Page d accueil POS-/Si caisse fermé/Bouton Mes resultats'), 0)
+WebUI.verifyElementNotPresent(findTestObject('Page d accueil POS-/Si caisse fermé/Bouton Mes resultats'), 3)
 
-WebUI.verifyElementNotPresent(findTestObject('Page d accueil POS-/Si caisse fermé/Bouton Ouvrir Fermer TS'), 0)
+WebUI.verifyElementNotPresent(findTestObject('Page d accueil POS-/Si caisse fermé/Bouton Ouvrir Fermer TS'), 3)
 
 'Cliquer sur le bouton Mon Compte'
 WebUI.click(findTestObject('Header POS-/Bouton Mon Compte'))
@@ -115,11 +115,11 @@ WebUI.click(findTestObject('Header POS-/Bouton Deconnexion'), FailureHandling.ST
 'Vérifier que l utilisateur est deconnecté et voit les éléments de la page login'
 WebUI.waitForElementPresent(findTestObject('Page Login POS-/Bouton connecter'), 5)
 
-WebUI.verifyElementPresent(findTestObject('Page Login POS-/Champ de saisie identifiant'), 0)
+WebUI.verifyElementPresent(findTestObject('Page Login POS-/Champ de saisie identifiant'), 3)
 
-WebUI.verifyElementPresent(findTestObject('Page Login POS-/Champ de saisie mot de passe'), 0)
+WebUI.verifyElementPresent(findTestObject('Page Login POS-/Champ de saisie mot de passe'), 3)
 
-WebUI.verifyElementPresent(findTestObject('Page Login POS-/Bouton connecter'), 0)
+WebUI.verifyElementPresent(findTestObject('Page Login POS-/Bouton connecter'), 3)
 
 WebUI.verifyElementNotClickable(findTestObject('Page Login POS-/Bouton connecter'))
 

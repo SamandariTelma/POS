@@ -18,7 +18,7 @@ import java.awt.event.KeyEvent as KeyEvent
 import org.openqa.selenium.Keys as Keys
 
 //Declaration du montant du Bundle
-int montantAPayer =  5794423
+int montantAPayer = 5794423
 
 String montantAPayerMGA = '5 794 423 MGA'
 
@@ -28,17 +28,17 @@ WebUI.deleteAllCookies()
 
 WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Connexion a POS'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Nouveau Panier'), 0)
+WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Nouveau Panier'), 12)
 
 WebUI.click(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Nouveau Panier'))
 
-WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Paiement Facture'), 0)
+WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Paiement Facture'), 3)
 
 WebUI.delay(6)
 
 WebUI.click(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Paiement Facture'))
 
-WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement/Champ numero facture'), 0)
+WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement/Champ numero facture'), 3)
 
 WebUI.verifyElementNotClickable(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement/Bouton Recherche'))
 
@@ -48,9 +48,9 @@ WebUI.verifyElementClickable(findTestObject('Page Vente POS-/Pour Recherche Fact
 
 WebUI.click(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement/Bouton Recherche'))
 
-WebUI.waitForAlert(0)
+WebUI.waitForAlert(3)
 
-WebUI.verifyAlertPresent(0)
+WebUI.verifyAlertPresent(3)
 
 String alertMessage = WebUI.getAlertText()
 
@@ -81,7 +81,7 @@ WebUI.click(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement/Ch
 
 WebUI.click(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement/Bouton Ajouter au panier'))
 
-WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Produit ajouter en Panier en cours'), 0)
+WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Produit ajouter en Panier en cours'), 3)
 
 verifierPanierEnCours()
 
@@ -95,7 +95,7 @@ WebUI.sendKeys(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement
 
 WebUI.click(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement/Bouton Ajouter au panier'))
 
-WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Produit ajouter en Panier en cours'), 0)
+WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Produit ajouter en Panier en cours'), 3)
 
 verifierPanierEnCours()
 
@@ -109,11 +109,12 @@ WebUI.sendKeys(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement
 
 WebUI.click(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement/Bouton Ajouter au panier'))
 
-WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Produit ajouter en Panier en cours'), 0)
+WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Produit ajouter en Panier en cours'), 3)
 
 verifierPanierEnCours()
 
-WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Payer en espèce'), ['montantAPayer':montantAPayer,'montantAPayerMGA':montantAPayerMGA,'montantInsufisantMGA':montantInsufisantMGA], FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Payer en espèce'), [('montantAPayer') : montantAPayer
+        , ('montantAPayerMGA') : montantAPayerMGA, ('montantInsufisantMGA') : montantInsufisantMGA], FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Finaliser la vente'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 

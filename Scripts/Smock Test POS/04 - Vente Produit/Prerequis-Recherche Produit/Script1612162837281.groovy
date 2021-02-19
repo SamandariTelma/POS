@@ -23,7 +23,7 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Connexion a POS'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 'Cliquer sur le menu Parametrage'
-WebUI.waitForElementPresent(findTestObject('Menu POS-/Menu Parametrage'), 3)
+WebUI.waitForElementPresent(findTestObject('Menu POS-/Menu Parametrage'), 10)
 
 WebUI.click(findTestObject('Menu POS-/Menu Parametrage'))
 

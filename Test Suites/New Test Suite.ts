@@ -65,4 +65,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Smock Test POS/11 - Rôles/Recherche roles</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>806079e5-969a-43a9-bb80-7d9060c6d53f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Smock Test POS/12 - Caisse/Recherche caisse</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

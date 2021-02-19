@@ -21,7 +21,7 @@ import org.openqa.selenium.Keys as Keys
 'Se connecter à POS'
 WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Connexion a POS'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('Menu POS-/Menu Parametrage'), 3)
+WebUI.waitForElementPresent(findTestObject('Menu POS-/Menu Parametrage'), 10)
 
 'Cliquer sur le menu Paramètrage '
 WebUI.click(findTestObject('Menu POS-/Menu Parametrage'))
@@ -143,19 +143,19 @@ WebUI.delay(0.500)
 
 'Vérifier q aucun resultat s affiche'
 WebUI.verifyElementNotPresent(findTestObject('Page Gestion des Numéros de Série-/Tableau de resultat/IMEI/Code Article premiere ligne'), 
-    0)
+    3)
 
 WebUI.verifyElementNotPresent(findTestObject('Page Gestion des Numéros de Série-/Tableau de resultat/IMEI/Code Sage premiere ligne'), 
-    0)
+    3)
 
 WebUI.verifyElementNotPresent(findTestObject('Page Gestion des Numéros de Série-/Tableau de resultat/IMEI/Libelle premiere ligne'), 
-    0)
+    3)
 
 WebUI.verifyElementNotPresent(findTestObject('Page Gestion des Numéros de Série-/Tableau de resultat/IMEI/Montant premiere ligne'), 
-    0)
+    3)
 
 WebUI.verifyElementNotPresent(findTestObject('Page Gestion des Numéros de Série-/Tableau de resultat/IMEI/IMEI premiere ligne'), 
-    0)
+    3)
 
 'Cliquer sur le bouton Reinitialiser'
 WebUI.click(findTestObject('Page Gestion des Numéros de Série-/Bouton Reinitialiser'))
@@ -287,7 +287,7 @@ WebUI.sendKeys(findTestObject('Element vide'), Keys.chord(Keys.ESCAPE))
 WebUI.click(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Champ Depot'))
 
 WebUI.waitForElementPresent(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Checkbox SHOP TEST DSI'), 
-    0)
+    3)
 
 WebUI.click(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Checkbox SHOP TEST DSI'))
 
@@ -302,19 +302,19 @@ WebUI.delay(0.500)
 
 'Vérifier q aucun resultat s affiche'
 WebUI.verifyElementNotPresent(findTestObject('Page Gestion des Numéros de Série-/Tableau de resultat/SN/Code Article premiere ligne'), 
-    0)
+    3)
 
 WebUI.verifyElementNotPresent(findTestObject('Page Gestion des Numéros de Série-/Tableau de resultat/SN/Code Sage premiere ligne'), 
-    0)
+    3)
 
 WebUI.verifyElementNotPresent(findTestObject('Page Gestion des Numéros de Série-/Tableau de resultat/SN/Libelle premiere ligne'), 
-    0)
+    3)
 
 WebUI.verifyElementNotPresent(findTestObject('Page Gestion des Numéros de Série-/Tableau de resultat/SN/Montant premiere ligne'), 
-    0)
+    3)
 
 WebUI.verifyElementNotPresent(findTestObject('Page Gestion des Numéros de Série-/Tableau de resultat/SN/SN premiere ligne'), 
-    0)
+    3)
 
 'Cliquer sur le bouton Reinitialiser'
 WebUI.click(findTestObject('Page Gestion des Numéros de Série-/Bouton Reinitialiser'))
@@ -360,7 +360,6 @@ WebUI.delay(0.500)
 WebUI.waitForElementPresent(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Champ Article'), 3)
 
 'Remplir les champs importants '
-
 WebUI.waitForElementPresent(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Champ Article'), 3)
 
 WebUI.sendKeys(findTestObject('Page Gestion des Numéros de Série-/Formulaire RECHERCHE/Champ Article'), GlobalVariable.codeArticleICCID)

@@ -18,14 +18,13 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import org.openqa.selenium.WebElement as WebElement
 import java.awt.event.KeyEvent as KeyEvent
-import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebDriver as WebDriver
-import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 'Se connecter à POS'
 WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Connexion a POS'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('Menu POS-/Menu Parametrage'), 3)
+WebUI.waitForElementPresent(findTestObject('Menu POS-/Menu Parametrage'), 10)
 
 'Cliquer sur Paramétrage'
 WebUI.click(findTestObject('Menu POS-/Menu Parametrage'), FailureHandling.CONTINUE_ON_FAILURE)
@@ -46,7 +45,7 @@ WebUI.sendKeys(findTestObject('Page Gestion des rôles/Recherche Avancée/Champ 
 WebUI.click(findTestObject('Page Gestion des rôles/Recherche Avancée/Checkbox Actif'))
 
 'Vérifier que le checbox n est pas coché'
-WebUI.verifyElementNotChecked(findTestObject('Page Gestion des rôles/Recherche Avancée/Checkbox Actif (etat)'), 0)
+WebUI.verifyElementNotChecked(findTestObject('Page Gestion des rôles/Recherche Avancée/Checkbox Actif (etat)'), 3)
 
 'Cliquer sur le bouton Rechercher'
 WebUI.click(findTestObject('Page Gestion des rôles/Bouton Rechercher'))
@@ -71,7 +70,7 @@ WebUI.verifyElementAttributeValue(findTestObject('Page Gestion des rôles/Recher
     0)
 
 'Vérifier que le Checkbox Actif est coché'
-WebUI.verifyElementChecked(findTestObject('Page Gestion des rôles/Recherche Avancée/Checkbox Actif (etat)'), 0)
+WebUI.verifyElementChecked(findTestObject('Page Gestion des rôles/Recherche Avancée/Checkbox Actif (etat)'), 3)
 
 'Saisir un code valide dans le champ Code'
 WebUI.sendKeys(findTestObject('Page Gestion des rôles/Recherche Avancée/Champ Code'), 'ADV')
@@ -80,7 +79,7 @@ WebUI.sendKeys(findTestObject('Page Gestion des rôles/Recherche Avancée/Champ 
 WebUI.click(findTestObject('Page Gestion des rôles/Recherche Avancée/Checkbox Actif'))
 
 'Vérifier que le checkbox Actif est décoché'
-WebUI.verifyElementNotChecked(findTestObject('Page Gestion des rôles/Recherche Avancée/Checkbox Actif (etat)'), 0)
+WebUI.verifyElementNotChecked(findTestObject('Page Gestion des rôles/Recherche Avancée/Checkbox Actif (etat)'), 3)
 
 'Cliquer sur le bouton Rechercher'
 WebUI.click(findTestObject('Page Gestion des rôles/Bouton Rechercher'))
@@ -111,7 +110,7 @@ WebUI.sendKeys(findTestObject('Page Gestion des rôles/Recherche Avancée/Champ 
 WebUI.click(findTestObject('Page Gestion des rôles/Recherche Avancée/Checkbox Actif'))
 
 'Vérifier que le checkbox devient coché'
-WebUI.verifyElementChecked(findTestObject('Page Gestion des rôles/Recherche Avancée/Checkbox Actif (etat)'), 0)
+WebUI.verifyElementChecked(findTestObject('Page Gestion des rôles/Recherche Avancée/Checkbox Actif (etat)'), 3)
 
 'Cliquer sur le bouton Rechercher'
 WebUI.click(findTestObject('Page Gestion des rôles/Bouton Rechercher'))

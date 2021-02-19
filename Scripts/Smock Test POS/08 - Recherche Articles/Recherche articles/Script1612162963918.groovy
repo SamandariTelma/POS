@@ -21,7 +21,7 @@ import org.openqa.selenium.WebElement as WebElement
 'Se connecter à POS'
 WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Connexion a POS'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('Menu POS-/Menu Parametrage'), 3)
+WebUI.waitForElementPresent(findTestObject('Menu POS-/Menu Parametrage'), 10)
 
 'Cliquer sur le menu Parametrage'
 WebUI.click(findTestObject('Menu POS-/Menu Parametrage'), FailureHandling.CONTINUE_ON_FAILURE)
@@ -208,7 +208,7 @@ WebUI.click(findTestObject('Page Gestion des articles/Bouton Reinitialiser'))
 WebUI.click(findTestObject('Page Gestion des articles/Formulaire Recherche avancée/Champ Type'))
 
 WebUI.waitForElementPresent(findTestObject('Page Gestion des articles/Formulaire Recherche avancée/Option Facture d abonnement'), 
-    0)
+    3)
 
 'Choisir l option Facture d abonnement'
 WebUI.click(findTestObject('Page Gestion des articles/Formulaire Recherche avancée/Option Facture d abonnement'), FailureHandling.CONTINUE_ON_FAILURE)
@@ -218,7 +218,7 @@ WebUI.click(findTestObject('Page Gestion des articles/Bouton Rechercher'), Failu
 
 WebUI.delay(0.500)
 
-WebUI.waitForElementPresent(findTestObject('Page Gestion des articles/Résultat Liste/Colonne Entite Juridique'), 0)
+WebUI.waitForElementPresent(findTestObject('Page Gestion des articles/Résultat Liste/Colonne Entite Juridique'), 3)
 
 //Récupération des résultats pour la colonne Libelle
 'Vérifier que la colonne libelle contient Facture d abonnement'
@@ -237,7 +237,7 @@ WebUI.click(findTestObject('Page Gestion des articles/Bouton Reinitialiser'))
 'Cliquer sur le champ Entité Juridique'
 WebUI.click(findTestObject('Page Gestion des articles/Formulaire Recherche avancée/Champ Entite juridique'))
 
-WebUI.waitForElementPresent(findTestObject('Page Gestion des articles/Formulaire Recherche avancée/Option Telma SA'), 0)
+WebUI.waitForElementPresent(findTestObject('Page Gestion des articles/Formulaire Recherche avancée/Option Telma SA'), 3)
 
 'Choisir l option Telma SA'
 WebUI.click(findTestObject('Page Gestion des articles/Formulaire Recherche avancée/Option Telma SA'), FailureHandling.CONTINUE_ON_FAILURE)
@@ -247,7 +247,7 @@ WebUI.click(findTestObject('Page Gestion des articles/Bouton Rechercher'), Failu
 
 WebUI.delay(0.500)
 
-WebUI.waitForElementPresent(findTestObject('Page Gestion des articles/Résultat Liste/Colonne Entite Juridique'), 0)
+WebUI.waitForElementPresent(findTestObject('Page Gestion des articles/Résultat Liste/Colonne Entite Juridique'), 3)
 
 //Récupération des résultats pour la colonne Entité Juridique
 'Vérifier que tous les résultats s affichent'

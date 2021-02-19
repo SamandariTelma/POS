@@ -31,7 +31,7 @@ String statut_a_rechercher
 'Se connecter à POS'
 WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Connexion a POS'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('Menu POS-/Menu Parametrage'), 3)
+WebUI.waitForElementPresent(findTestObject('Menu POS-/Menu Parametrage'), 10)
 
 'Cliquer sur le menu Paramétrage'
 WebUI.click(findTestObject('Menu POS-/Menu Parametrage'), FailureHandling.CONTINUE_ON_FAILURE)
@@ -60,7 +60,7 @@ WebUI.click(findTestObject('Page Gestion des articles non sérialisé/Formulaire
 WebUI.delay(6)
 
 WebUI.waitForElementVisible(findTestObject('Page Gestion des articles non sérialisé/Formulaire Recherche/Champ Statut'), 
-    0)
+    3)
 
 'Cliquer le champ Choisissez un statut'
 WebUI.click(findTestObject('Page Gestion des articles non sérialisé/Formulaire Recherche/Champ Statut'), FailureHandling.CONTINUE_ON_FAILURE)
@@ -188,7 +188,7 @@ WebUI.click(findTestObject('Page Gestion des articles non sérialisé/Bouton Rec
 
 WebUI.delay(0.500)
 
-WebUI.waitForElementPresent(findTestObject('Page Gestion des articles non sérialisé/Résultat Liste/Depot 1ere ligne'), 0)
+WebUI.waitForElementPresent(findTestObject('Page Gestion des articles non sérialisé/Résultat Liste/Depot 1ere ligne'), 3)
 
 'Vérifier que les résultats adéquats au champ recherché apparaissent dans la liste article non sérialisé'
 WebUI.verifyElementText(findTestObject('Page Gestion des articles non sérialisé/Résultat Liste/Depot 1ere ligne'), depot_a_rechercher)

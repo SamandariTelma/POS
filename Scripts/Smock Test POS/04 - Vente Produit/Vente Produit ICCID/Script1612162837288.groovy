@@ -14,8 +14,9 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import java.text.DecimalFormat
-import java.text.DecimalFormatSymbols
+import java.text.DecimalFormat as DecimalFormat
+import java.text.DecimalFormatSymbols as DecimalFormatSymbols
+
 //Declaration du montant a payer
 String montant = GlobalVariable.prixICCID //ex '1 000 000'
 
@@ -24,22 +25,22 @@ int montantAPayer = montant.replaceAll('\\s', '').toInteger( //devient 1000000
 
 String montantAPayerMGA = GlobalVariable.prixICCID + ' MGA'
 
-String montantInsufisantMGA = formatNumber(montantAPayer - 1,false) + ' MGA' //devient 999 999 MGA
+String montantInsufisantMGA = formatNumber(montantAPayer - 1, false) + ' MGA' //devient 999 999 MGA
 
 'Se connecter à POS'
 WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Connexion a POS'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Nouveau Panier'), 0)
+WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Nouveau Panier'), 10)
 
 'Cliquer sur Nouveau panier'
 WebUI.click(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Nouveau Panier'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Vente produit'), 0)
+WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Vente produit'), 3)
 
 'Cliquer sur Vente produit'
 WebUI.click(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Vente produit'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Champ de saisie numero Imei ICCID EAN SN'), 0)
+WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Champ de saisie numero Imei ICCID EAN SN'), 3)
 
 'Renseigner le numéro de ICCID qui n existe pas'
 WebUI.sendKeys(findTestObject('Page Vente POS-/Champ de saisie numero Imei ICCID EAN SN'), '64654654')
@@ -47,7 +48,7 @@ WebUI.sendKeys(findTestObject('Page Vente POS-/Champ de saisie numero Imei ICCID
 'Cliquer sur le bouton Rechercher'
 WebUI.click(findTestObject('Page Vente POS-/Bouton Loupe'))
 
-WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Tooltip info article non reference'), 0)
+WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Tooltip info article non reference'), 3)
 
 'Vérifier l apparition d un message mentionnant que le produit n est pas referencé'
 WebUI.verifyElementText(findTestObject('Page Vente POS-/Tooltip info article non reference'), 'L\'article n\'a pas encore été référencé')
@@ -96,14 +97,20 @@ WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Payer en 
 WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Finaliser la vente'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 'Editer la facture'
-WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Editer facture'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Editer facture'), [:], FailureHandling.CONTINUE_ON_FAILURE //ex: 1000000 devient 1.000.000
+    ) //ex: 1.000.000 devient 1 000 000
 
-String formatNumber(def number,boolean withDecimals=true)
-{
-	String format=withDecimals?"#,###.00":"#,###"
-	DecimalFormat formatter = new DecimalFormat(format)
-	formatter.setDecimalFormatSymbols(new DecimalFormatSymbols(new Locale("es")))
-	number=formatter.format(number) //ex: 1000000 devient 1.000.000
-	number=number.replaceAll('\\.', ' ')//ex: 1.000.000 devient 1 000 000
-	return number
+String formatNumber(def number, boolean withDecimals = true) {
+    String format = withDecimals ? '#,###.00' : '#,###'
+
+    DecimalFormat formatter = new DecimalFormat(format)
+
+    formatter.setDecimalFormatSymbols(new DecimalFormatSymbols(new Locale('es')))
+
+    number = formatter.format(number)
+
+    number = number.replaceAll('\\.', ' ')
+
+    return number
 }
+

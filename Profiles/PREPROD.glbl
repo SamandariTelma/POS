@@ -16,7 +16,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>A definir</description>
-      <initValue>'Thas4e@1422'</initValue>
+      <initValue>'Thas4e@1421'</initValue>
       <name>loginPassword</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -26,7 +26,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>A definir</description>
-      <initValue>'Thas4e@1422'</initValue>
+      <initValue>'Thas4e@1421'</initValue>
       <name>loginPasswordNoCaisse</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -36,7 +36,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>A definir</description>
-      <initValue>'Thas4e@1422'</initValue>
+      <initValue>'Thas4e@1421'</initValue>
       <name>loginPasswordOpenedCaisse</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

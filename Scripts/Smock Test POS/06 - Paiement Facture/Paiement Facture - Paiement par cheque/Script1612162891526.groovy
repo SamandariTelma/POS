@@ -30,18 +30,18 @@ WebUI.deleteAllCookies()
 WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Connexion a POS'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 'Cliquer sur nouveau panier'
-WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Nouveau Panier'), 0)
+WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Nouveau Panier'), 10)
 
 WebUI.click(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Nouveau Panier'))
 
 'Cliquer sur paiement facture'
-WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Paiement Facture'), 0)
+WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Paiement Facture'), 3)
 
 WebUI.delay(6)
 
 WebUI.click(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Paiement Facture'))
 
-WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement/Champ numero facture'), 0)
+WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement/Champ numero facture'), 3)
 
 'Saisir un numéro de facture inexistant puis rechercher'
 WebUI.verifyElementNotClickable(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement/Bouton Recherche'))
@@ -53,9 +53,9 @@ WebUI.verifyElementClickable(findTestObject('Page Vente POS-/Pour Recherche Fact
 WebUI.click(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement/Bouton Recherche'))
 
 'Affichage du message d erreur: Element introuvable ou erreur lors de la recherche'
-WebUI.waitForAlert(0)
+WebUI.waitForAlert(3)
 
-WebUI.verifyAlertPresent(0)
+WebUI.verifyAlertPresent(3)
 
 String alertMessage = WebUI.getAlertText()
 
@@ -89,12 +89,12 @@ WebUI.sendKeys(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement
 WebUI.click(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement/Checkbox'))
 
 'Vérifier que le checkbox est coché'
-WebUI.verifyElementChecked(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement/Checbox (etat)'), 0)
+WebUI.verifyElementChecked(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement/Checbox (etat)'), 3)
 
 'Cliquer sur le bouton Ajouter au panier'
 WebUI.click(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement/Bouton Ajouter au panier'))
 
-WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Produit ajouter en Panier en cours'), 0)
+WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Produit ajouter en Panier en cours'), 3)
 
 'Vérifier que le montant est ajouter dans le panier en cours'
 verifierPanierEnCours()
@@ -110,12 +110,12 @@ WebUI.sendKeys(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement
     )
 
 'Vérifier que le checkbox reste coché'
-WebUI.verifyElementChecked(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement/Checbox (etat)'), 0)
+WebUI.verifyElementChecked(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement/Checbox (etat)'), 3)
 
 'Cliquer sur le bouton Ajouter au panier'
 WebUI.click(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement/Bouton Ajouter au panier'))
 
-WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Produit ajouter en Panier en cours'), 0)
+WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Produit ajouter en Panier en cours'), 3)
 
 'Vérifier que le montant est ajouter dans le panier en cours'
 verifierPanierEnCours()
@@ -131,13 +131,13 @@ WebUI.sendKeys(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement
     )
 
 'Vérifier que le checkbox reste coché'
-WebUI.verifyElementChecked(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement/Checbox (etat)'), 0)
+WebUI.verifyElementChecked(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement/Checbox (etat)'), 3)
 
 'Cliquer sur le bouton Ajouter au panier'
 WebUI.click(findTestObject('Page Vente POS-/Pour Recherche Facture Uniquement/Bouton Ajouter au panier'))
 
 'Vérifier que le montant est bien ajouter dans le panier en cours'
-WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Produit ajouter en Panier en cours'), 0)
+WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Produit ajouter en Panier en cours'), 3)
 
 verifierPanierEnCours()
 

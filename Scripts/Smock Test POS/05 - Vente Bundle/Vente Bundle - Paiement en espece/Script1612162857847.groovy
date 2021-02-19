@@ -30,29 +30,32 @@ WebUI.deleteAllCookies()
 WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Connexion a POS'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 'Cliquer sur nouveau panier'
+WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Nouveau Panier'), 10)
+
+'Cliquer sur nouveau panier'
 WebUI.click(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Nouveau Panier'))
 
 'Cliquer sur vente bundle\r\n'
-WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Vente bundle'), 0)
+WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Vente bundle'), 3)
 
-WebUI.scrollToElement(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Vente bundle'), 0)
+WebUI.scrollToElement(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Vente bundle'), 3)
 
 WebUI.delay(0.500)
 
 WebUI.click(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Vente bundle'), FailureHandling.STOP_ON_FAILURE)
 
 'Cliquer sur la catégorie de vente NET\r\n'
-WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Popin Categorie de Vente/Bouton Net'), 0)
+WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Popin Categorie de Vente/Bouton Net'), 3)
 
 WebUI.click(findTestObject('Page d accueil POS-/Popin Categorie de Vente/Bouton Net'))
 
 'Cliquer sur la sous catégorie Daily'
-WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Popin Categorie de Vente/Bouton Daily'), 0)
+WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Popin Categorie de Vente/Bouton Daily'), 3)
 
 WebUI.click(findTestObject('Page d accueil POS-/Popin Categorie de Vente/Bouton Daily'))
 
 'Atterir sur la page d\'effectuation de vente avec le numéro de l\'id panier et le détails de l\'article. Exemple :\r\n\nLibellé : NET ONE DAY\r\n\nCode : Bundle_00023\r\n\nCode sage : MOBBUNDLE_00023\n"\r\n'
-WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Champ Libelle'), 0)
+WebUI.waitForElementPresent(findTestObject('Page Vente POS-/Champ Libelle'), 3)
 
 WebUI.verifyElementAttributeValue(findTestObject('Page Vente POS-/Champ Libelle'), 'value', 'NET ONE DAY', 0, FailureHandling.CONTINUE_ON_FAILURE)
 
