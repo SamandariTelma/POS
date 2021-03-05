@@ -31,13 +31,16 @@ WebUI.sendKeys(findTestObject('Popin Recherche informations client/Champ Prenom'
 
 WebUI.sendKeys(findTestObject('Popin Recherche informations client/Champ Telephone'), '034 00 308 16')
 
-WebUI.verifyElementAttributeValue(findTestObject('Popin Recherche informations client/Champ E-Mail'), 'value', 'samandari.ravelomanantsoa@telma.mg',
-	0)
+WebUI.verifyElementAttributeValue(findTestObject('Popin Recherche informations client/Champ E-Mail'), 'value', 'samandari.ravelomanantsoa@telma.mg', 
+    0)
 
 WebUI.sendKeys(findTestObject('Popin Recherche informations client/Champ Adresse'), 'Galaxy')
+
+WebUI.delay(0.500)
 
 'Vérifier que le bouton Imprimer Facture devient cliquable'
 WebUI.verifyElementClickable(findTestObject('Popin Recherche informations client/Bouton Imprimer Facture'))
 
 'Cliquer sur le bouton Imprimer Facture'
 WebUI.click(findTestObject('Popin Recherche informations client/Bouton Imprimer Facture'))
+

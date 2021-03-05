@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>New Test Suite</name>
+   <name>POS tnr</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -30,43 +30,43 @@
       <testCaseId>Test Cases/Smock Test POS/04 - Vente Produit/Prerequis-Recherche Produit</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>bbc8e4b0-d920-47dc-b09a-e08c3708ca9e</guid>
+      <guid>cbe3e4c2-dd04-4623-91ef-fe8a42cf0882</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Smock Test POS/05 - Vente Bundle/Vente Bundle - Paiement en espece</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>a1de2fa4-cea1-4212-9acf-2aae24805146</guid>
+      <guid>3148aebc-6993-48bd-a6fb-273d517cf89e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Smock Test POS/05 - Vente Bundle/Vente Bundle - Paiement par cheque</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>c25cd42f-a809-40ea-bf0f-d3d48082fd09</guid>
+      <guid>7f803452-5136-4f82-89cf-a63e583b596e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Smock Test POS/08 - Recherche Articles/Recherche articles</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>84bbf555-814b-46e0-911d-14fe631b0b9a</guid>
+      <guid>4ec00561-0f1b-49cc-aeac-9ccbb151a68f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Smock Test POS/09 - Recherche Numero de serie/Recherche Numero de serie</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>a265a686-4054-4ee8-aeac-f5e48941219c</guid>
+      <guid>547cc6c3-bc11-4b5d-a25f-18749c8c93aa</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Smock Test POS/10 - Article non sérialisé/Recherche article non serialise</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>95128b0d-b5bf-46da-baeb-36c15a569da0</guid>
+      <guid>d15540be-3af3-4663-9e55-2a839318741b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Smock Test POS/11 - Rôles/Recherche roles</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>806079e5-969a-43a9-bb80-7d9060c6d53f</guid>
+      <guid>ff03c2ad-f9ae-49f5-a488-d2782e6a512d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Smock Test POS/12 - Caisse/Recherche caisse</testCaseId>
