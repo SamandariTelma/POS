@@ -25,15 +25,15 @@ WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Ouvrir le
 
 WebUI.navigateToUrl(GlobalVariable.urlPreprod)
 
-WebUI.waitForElementPresent(findTestObject('Page Login POS-/Champ de saisie identifiant'), 3)
+WebUI.waitForElementPresent(findTestObject('Page Login POS-/Champ de saisi identifiant'), 3)
 
 'Saisir le bon identifiant'
 WebUI.delay(0.500)
 
-WebUI.setText(findTestObject('Page Login POS-/Champ de saisie identifiant'), GlobalVariable.loginUsername)
+WebUI.setText(findTestObject('Page Login POS-/Champ de saisi identifiant'), GlobalVariable.loginUsername)
 
 'Saisir le bon mot de passe'
-WebUI.setText(findTestObject('Page Login POS-/Champ de saisie mot de passe'), GlobalVariable.loginPassword)
+WebUI.setText(findTestObject('Page Login POS-/Champ de saisi mot de passe'), GlobalVariable.loginPassword)
 
 'Cliquer sur le bouton connecter'
 WebUI.click(findTestObject('Page Login POS-/Bouton connecter'))

@@ -19,7 +19,7 @@ WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Ouvrir le
 
 WebUI.navigateToUrl(GlobalVariable.urlPreprod)
 
-WebUI.waitForElementPresent(findTestObject('Page Login POS-/Champ de saisie identifiant'), 3)
+WebUI.waitForElementPresent(findTestObject('Page Login POS-/Champ de saisi identifiant'), 3)
 
 'Vérifier que le bouton Connecter n est pas cliquable'
 WebUI.verifyElementNotClickable(findTestObject('Page Login POS-/Bouton connecter'))
@@ -27,10 +27,10 @@ WebUI.verifyElementNotClickable(findTestObject('Page Login POS-/Bouton connecter
 WebUI.delay(0.500)
 
 'Saisir le bon identifiant'
-WebUI.setText(findTestObject('Page Login POS-/Champ de saisie identifiant'), GlobalVariable.loginUsernameNoCaisse)
+WebUI.setText(findTestObject('Page Login POS-/Champ de saisi identifiant'), GlobalVariable.loginUsernameNoCaisse)
 
 'Saisir le mauvais mot de passe'
-WebUI.setText(findTestObject('Page Login POS-/Champ de saisie mot de passe'), 'Abla4564654@+')
+WebUI.setText(findTestObject('Page Login POS-/Champ de saisi mot de passe'), 'Abla4564654@+')
 
 'Vérifier que le bouton Connecter devient cliquable'
 WebUI.verifyElementClickable(findTestObject('Page Login POS-/Bouton connecter'))
@@ -51,10 +51,10 @@ WebUI.verifyMatch(msg_echec_connexion, 'Login ou mot de passe incorrect', false)
 WebUI.acceptAlert()
 
 'Saisir le bon identifiant'
-WebUI.setText(findTestObject('Page Login POS-/Champ de saisie identifiant'), GlobalVariable.loginUsernameNoCaisse)
+WebUI.setText(findTestObject('Page Login POS-/Champ de saisi identifiant'), GlobalVariable.loginUsernameNoCaisse)
 
 'Saisir le bon mot de passe'
-WebUI.setText(findTestObject('Page Login POS-/Champ de saisie mot de passe'), GlobalVariable.loginPasswordNoCaisse)
+WebUI.setText(findTestObject('Page Login POS-/Champ de saisi mot de passe'), GlobalVariable.loginPasswordNoCaisse)
 
 'Cliquer sur le bouton connecter'
 WebUI.click(findTestObject('Page Login POS-/Bouton connecter'), FailureHandling.STOP_ON_FAILURE)
@@ -100,9 +100,9 @@ WebUI.click(findTestObject('Header POS-/Bouton Deconnexion'), FailureHandling.ST
 'Vérifier que l utilisateur est deconnecté et voit les éléments de la page login'
 WebUI.waitForElementPresent(findTestObject('Page Login POS-/Bouton connecter'), 5)
 
-WebUI.verifyElementPresent(findTestObject('Page Login POS-/Champ de saisie identifiant'), 3)
+WebUI.verifyElementPresent(findTestObject('Page Login POS-/Champ de saisi identifiant'), 3)
 
-WebUI.verifyElementPresent(findTestObject('Page Login POS-/Champ de saisie mot de passe'), 3)
+WebUI.verifyElementPresent(findTestObject('Page Login POS-/Champ de saisi mot de passe'), 3)
 
 WebUI.verifyElementPresent(findTestObject('Page Login POS-/Bouton connecter'), 3)
 

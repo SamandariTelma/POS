@@ -26,10 +26,10 @@ WebUI.openBrowser('')
 WebUI.navigateToUrl(GlobalVariable.urlPreprod)
 
 'Saisir le bon identifiant'
-WebUI.setText(findTestObject('Page Login POS-/Champ de saisie identifiant'), GlobalVariable.loginUsername)
+WebUI.setText(findTestObject('Page Login POS-/Champ de saisi identifiant'), GlobalVariable.loginUsername)
 
 'Saisir le bon mot de passe'
-WebUI.setText(findTestObject('Page Login POS-/Champ de saisie mot de passe'), GlobalVariable.loginPassword)
+WebUI.setText(findTestObject('Page Login POS-/Champ de saisi mot de passe'), GlobalVariable.loginPassword)
 
 'Cliquer sur le bouton connecter'
 WebUI.click(findTestObject('Page Login POS-/Bouton connecter'))

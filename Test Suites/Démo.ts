@@ -12,9 +12,9 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>9de94897-b3b0-4a98-907f-28e83f0f3df7</testSuiteGuid>
    <testCaseLink>
-      <guid>1bee3c39-68aa-4ac7-862f-3b8df5bf9237</guid>
+      <guid>8b70a2f1-449a-4cf2-a9d2-980c52f6b4e2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Smock Test POS/11 - Rôles/Recherche roles</testCaseId>
+      <testCaseId>Test Cases/Smock Test POS/05 - Vente Bundle/Vente Bundle - Paiement en espece</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

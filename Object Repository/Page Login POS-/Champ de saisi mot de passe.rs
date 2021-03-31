@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Champ de saisie mot de passe</name>
+   <name>Champ de saisi mot de passe</name>
    <tag></tag>
    <elementGuidId>67d4e8e7-7421-4dca-bc37-743b66796a92</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#mat-input-1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@placeholder='Mot de passe']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#mat-input-1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
