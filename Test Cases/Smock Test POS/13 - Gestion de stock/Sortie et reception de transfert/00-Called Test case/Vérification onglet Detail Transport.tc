@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Vérification onglet Detail Transport</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>094da81f-2209-4a5a-bde9-c5ce9c23ae9f</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.referenceAR</defaultValue>
+      <description></description>
+      <id>cd4f4295-0e6b-4d26-83cc-3d8ee2d050f7</id>
+      <masked>false</masked>
+      <name>referenceAR</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.dateEnvoi</defaultValue>
+      <description></description>
+      <id>a854dda9-4e0b-4825-8b1a-484fcce4ac9b</id>
+      <masked>false</masked>
+      <name>dateEnvoi</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.transporteur</defaultValue>
+      <description></description>
+      <id>402d2dd2-a48d-4cad-b693-3e5c9239a5ee</id>
+      <masked>false</masked>
+      <name>nomTransporteur</name>
+   </variable>
+</TestCaseEntity>

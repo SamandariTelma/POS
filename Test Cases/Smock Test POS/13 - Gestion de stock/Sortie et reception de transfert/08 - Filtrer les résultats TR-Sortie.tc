@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>08 - Filtrer les résultats TR-Sortie</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5ca0e884-f57a-4b08-b535-d18c9edeb24c</testCaseGuid>
+   <variable>
+      <defaultValue>'MOBKITPREPAID'</defaultValue>
+      <description></description>
+      <id>673a4501-8bcd-4a60-93e9-ecac2e83bf6d</id>
+      <masked>false</masked>
+      <name>codeSageARecherche</name>
+   </variable>
+</TestCaseEntity>

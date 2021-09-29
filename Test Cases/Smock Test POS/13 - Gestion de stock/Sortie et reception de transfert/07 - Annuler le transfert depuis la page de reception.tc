@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>07 - Annuler le transfert depuis la page de reception</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ee9b8bcc-4606-48b3-b109-2f775a8a9dc3</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.referenceTR</defaultValue>
+      <description></description>
+      <id>7d3d5ed8-60a1-4829-83e6-4cacc1a667cd</id>
+      <masked>false</masked>
+      <name>referenceTR</name>
+   </variable>
+</TestCaseEntity>

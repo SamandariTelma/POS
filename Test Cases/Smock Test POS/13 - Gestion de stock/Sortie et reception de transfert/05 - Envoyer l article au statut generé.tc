@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>05 - Envoyer l article au statut generé</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e5005b43-b0c0-49bc-8e18-3b9a16822ceb</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.codeSage1</defaultValue>
+      <description></description>
+      <id>afba9440-a1f7-41ac-9ed3-8385fa296ed3</id>
+      <masked>false</masked>
+      <name>codeSage</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.codeArticle1</defaultValue>
+      <description></description>
+      <id>7c8e6b18-4741-4842-ab1b-efd14c98f755</id>
+      <masked>false</masked>
+      <name>codeArticle</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.libelle1</defaultValue>
+      <description></description>
+      <id>afc00e9c-b787-4785-a259-6d58b4e1b43e</id>
+      <masked>false</masked>
+      <name>libelle</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>9f651364-cc43-4804-8438-871d3d6dc736</id>
+      <masked>false</masked>
+      <name>quantite</name>
+   </variable>
+</TestCaseEntity>

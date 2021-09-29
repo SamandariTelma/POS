@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>02 - Ajouter d autre article</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c62bab11-a21a-414c-a7d2-32da3fe282c7</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.codeSage2</defaultValue>
+      <description></description>
+      <id>c8c9c2b3-dee6-4f63-b2d6-968e1820ef7f</id>
+      <masked>false</masked>
+      <name>codeSage</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.codeArticle2</defaultValue>
+      <description></description>
+      <id>8537b5ee-7557-48f1-9911-31f2859c6578</id>
+      <masked>false</masked>
+      <name>codeArticle</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.libelle2</defaultValue>
+      <description></description>
+      <id>dddee581-ddfb-4017-9bbc-fc37e187589b</id>
+      <masked>false</masked>
+      <name>libelle</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>5296de99-cbb1-4cd3-a8ec-878d51faf0ef</id>
+      <masked>false</masked>
+      <name>quantite</name>
+   </variable>
+</TestCaseEntity>

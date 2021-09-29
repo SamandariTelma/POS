@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>06 - Consulter le détail de transfert</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1885e925-712a-448c-918a-ad8617c27f14</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.referenceTR</defaultValue>
+      <description></description>
+      <id>b64c8cd0-84c3-43d6-9a7e-473d049a2959</id>
+      <masked>false</masked>
+      <name>referenceTR</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.codeSage1</defaultValue>
+      <description></description>
+      <id>597f7c77-3a6e-4d4e-a3ad-552a5f4c6426</id>
+      <masked>false</masked>
+      <name>codeSage</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.codeArticle1</defaultValue>
+      <description></description>
+      <id>2b4a5063-13cc-4af6-b55c-8a3cc4fff109</id>
+      <masked>false</masked>
+      <name>codeProduit</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.depotEnvoyeur</defaultValue>
+      <description></description>
+      <id>bc5b9b5b-1fdd-437b-a3a2-90384037d370</id>
+      <masked>false</masked>
+      <name>depotOrigine</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.depotReceveur</defaultValue>
+      <description></description>
+      <id>f539fe35-0d00-4408-bfba-13c4d573d9c7</id>
+      <masked>false</masked>
+      <name>depotDestination</name>
+   </variable>
+   <variable>
+      <defaultValue>'Appro exceptionnel'</defaultValue>
+      <description></description>
+      <id>05c2a4bf-1ce8-442b-9c9f-76052bceefc2</id>
+      <masked>false</masked>
+      <name>type</name>
+   </variable>
+   <variable>
+      <defaultValue>'TEST'</defaultValue>
+      <description></description>
+      <id>3791db50-8ce1-45ef-84ac-d3e833de71dc</id>
+      <masked>false</masked>
+      <name>motif</name>
+   </variable>
+</TestCaseEntity>

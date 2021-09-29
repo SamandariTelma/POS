@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>09 - Filtrer les résultats TR-Reception</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>72ab9ace-e72e-40f6-9244-2fb847f8aa0d</testCaseGuid>
+   <variable>
+      <defaultValue>'MOBKITPREPAID'</defaultValue>
+      <description></description>
+      <id>1115cd21-00bc-4cb9-b060-32c18bf371fb</id>
+      <masked>false</masked>
+      <name>codeSageARecherche</name>
+   </variable>
+</TestCaseEntity>

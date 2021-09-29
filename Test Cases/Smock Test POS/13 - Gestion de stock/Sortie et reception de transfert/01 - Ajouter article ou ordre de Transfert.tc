@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>01 - Ajouter article ou ordre de Transfert</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>89c82fda-cd39-4f1e-9bb5-89d38858692a</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.codeSage1</defaultValue>
+      <description></description>
+      <id>8d6ad66b-c2e0-49eb-8908-6a695c93ad9c</id>
+      <masked>false</masked>
+      <name>codeSage</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.codeArticle1</defaultValue>
+      <description></description>
+      <id>222dd0ca-23ea-47d6-b7f9-36545dfe252e</id>
+      <masked>false</masked>
+      <name>codeArticle</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.libelle1</defaultValue>
+      <description></description>
+      <id>401216dd-cef6-46f0-a1e6-04e0151498a6</id>
+      <masked>false</masked>
+      <name>libelle</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>ece6b6f7-d58c-4f72-aab6-2b4476545c7a</id>
+      <masked>false</masked>
+      <name>quantite</name>
+   </variable>
+</TestCaseEntity>

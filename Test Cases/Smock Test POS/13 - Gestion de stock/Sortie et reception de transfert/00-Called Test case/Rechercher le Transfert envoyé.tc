@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Rechercher le Transfert envoyé</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0caa44b6-2aeb-4beb-9076-a842dde3a6f3</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.referenceTR</defaultValue>
+      <description></description>
+      <id>b38eb013-0e44-4625-aa0d-3d06dc133285</id>
+      <masked>false</masked>
+      <name>referenceTR</name>
+   </variable>
+</TestCaseEntity>

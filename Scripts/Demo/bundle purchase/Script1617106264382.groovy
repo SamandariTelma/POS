@@ -32,7 +32,7 @@ WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Connexion
 
 WebUI.waitForElementPresent(findTestObject('Page d accueil POS-/Si caisse ouvert/Bouton Nouveau Panier'), 10)
 
-'Verify if Home page URL'
+'Verify Home page URL'
 WebUI.verifyMatch('https://tapq404lv/pos/pos/activity', WebUI.getUrl(), false)
 
 'Click on button Nouveau Panier'

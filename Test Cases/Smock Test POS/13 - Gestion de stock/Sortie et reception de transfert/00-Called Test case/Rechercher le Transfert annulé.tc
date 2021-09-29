@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Rechercher le Transfert annulé</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>39952d34-7ff8-4dfc-a452-516fdf60891d</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.referenceTR</defaultValue>
+      <description></description>
+      <id>a8b0e655-54dc-423d-9248-d675d570ed2f</id>
+      <masked>false</masked>
+      <name>referenceTR</name>
+   </variable>
+</TestCaseEntity>

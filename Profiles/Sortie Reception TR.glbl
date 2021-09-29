@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>Sortie Reception TR</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>A definir</description>
+      <initValue>'https://tapq404lv/pos/login'</initValue>
+      <name>urlPreprod</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>A definir</description>
+      <initValue>'Samandari'</initValue>
+      <name>loginUsername</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>A definir</description>
+      <initValue>'Thas4e@1424'</initValue>
+      <name>loginPassword</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>A definir</description>
+      <initValue>'MOBGSM VIDA S45 SMARTPHONE'</initValue>
+      <name>codeSage1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>A definir</description>
+      <initValue>'TERMINAL-00040'</initValue>
+      <name>codeArticle1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>A definir</description>
+      <initValue>'GSM TELMA F1XS4G'</initValue>
+      <name>libelle1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>imei</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>A definir</description>
+      <initValue>'MOBKITPREPAID'</initValue>
+      <name>codeSage2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>A definir</description>
+      <initValue>'SIM_TELMA'</initValue>
+      <name>codeArticle2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>A definir</description>
+      <initValue>'CARTE SIM'</initValue>
+      <name>libelle2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>A definir</description>
+      <initValue>'TRADV_SHOP_TEST28092021115673'</initValue>
+      <name>referenceTR</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>A definir</description>
+      <initValue>'SHOP TEST DSI'</initValue>
+      <name>depotEnvoyeur</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>A definir</description>
+      <initValue>'ADV_SHOP_TEST'</initValue>
+      <name>depotReceveur</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>dateTR</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>dateEnvoi</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>A definir</description>
+      <initValue>'Interne TELMA'</initValue>
+      <name>transporteur</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>A definir</description>
+      <initValue>'REF AR'</initValue>
+      <name>referenceAR</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

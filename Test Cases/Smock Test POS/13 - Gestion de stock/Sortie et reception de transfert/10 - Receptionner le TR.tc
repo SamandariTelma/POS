@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>10 - Receptionner le TR</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ba08808b-68ce-4645-bb65-ff3db857a9a6</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.referenceTR</defaultValue>
+      <description></description>
+      <id>606ce157-b101-4a18-973b-f2dfdcfe8af7</id>
+      <masked>false</masked>
+      <name>referenceTR</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.dateTR</defaultValue>
+      <description></description>
+      <id>4d015a3a-18fe-4c8f-a2ef-27424b770dc5</id>
+      <masked>false</masked>
+      <name>DateTR</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.depotEnvoyeur</defaultValue>
+      <description></description>
+      <id>9b306568-ba42-4a2b-8b2b-94cca4bd4e3d</id>
+      <masked>false</masked>
+      <name>DepotEnvoyeur</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.depotReceveur</defaultValue>
+      <description></description>
+      <id>1cd93763-106d-473f-b376-942ddb319ac8</id>
+      <masked>false</masked>
+      <name>DepotReceveur</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.codeArticle1</defaultValue>
+      <description></description>
+      <id>64c43936-722c-4dc6-854c-23f5f69b44d5</id>
+      <masked>false</masked>
+      <name>CodeProduit</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.codeSage1</defaultValue>
+      <description></description>
+      <id>39f2a4cf-c95e-42d2-928e-421ac0d95aa3</id>
+      <masked>false</masked>
+      <name>CodeSage</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>e24cc65b-e116-4bde-b194-ab08e20daea8</id>
+      <masked>false</masked>
+      <name>Quantite</name>
+   </variable>
+</TestCaseEntity>

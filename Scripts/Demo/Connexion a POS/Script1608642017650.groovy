@@ -25,6 +25,8 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.urlPreprod)
 
+WebUI.setViewPortSize(1920, 1040)
+
 'Saisir le bon identifiant'
 WebUI.setText(findTestObject('Page Login POS-/Champ de saisi identifiant'), GlobalVariable.loginUsername)
 

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>03 - Vérification statut article</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>259f38da-92af-4133-b9c6-dc31db1a0bfb</testCaseGuid>
+   <variable>
+      <defaultValue>'Alloué TR'</defaultValue>
+      <description></description>
+      <id>731e37c1-5dfc-48c2-bac0-2b351e7f5fe8</id>
+      <masked>false</masked>
+      <name>statutAttendu</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.imei</defaultValue>
+      <description></description>
+      <id>bfbd2f64-374c-4b78-a344-3a6c2025dd92</id>
+      <masked>false</masked>
+      <name>imei</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.depotEnvoyeur</defaultValue>
+      <description></description>
+      <id>57334ba6-5d3f-4585-b915-010bb5ba5ac6</id>
+      <masked>false</masked>
+      <name>depot</name>
+   </variable>
+</TestCaseEntity>

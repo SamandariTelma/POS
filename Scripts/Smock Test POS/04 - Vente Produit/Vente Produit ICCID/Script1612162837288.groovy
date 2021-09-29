@@ -98,7 +98,8 @@ WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Finaliser
 
 'Editer la facture'
 WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Editer facture'), [:], FailureHandling.CONTINUE_ON_FAILURE //ex: 1000000 devient 1.000.000
-    ) //ex: 1.000.000 devient 1 000 000
+    //ex: 1.000.000 devient 1 000 000
+    )
 
 String formatNumber(def number, boolean withDecimals = true) {
     String format = withDecimals ? '#,###.00' : '#,###'
