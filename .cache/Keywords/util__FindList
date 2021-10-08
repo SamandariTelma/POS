@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "26B3BE91BDCF187D4228CE8AC7698F10",
+  "keywordFileContentHash": "5AD13A54A5FE381863C6100BD8997100",
   "keywordClasses": [
     {
       "name": "util.FindList",
@@ -38,6 +38,38 @@
         },
         {
           "name": "verifyResultColumn",
+          "parameters": [
+            {
+              "name": "objectElement",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "optionToFind",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "verifyIfContainResult",
           "parameters": [
             {
               "name": "objectElement",

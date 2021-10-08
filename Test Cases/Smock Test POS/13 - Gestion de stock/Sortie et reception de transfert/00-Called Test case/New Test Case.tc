@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>New Test Case</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9aadfe02-4ea1-4a80-8cae-ae0f028ce019</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.depotEnvoyeur</defaultValue>
+      <description></description>
+      <id>2b06a39b-d1c4-4e44-8d5b-fb48befaf483</id>
+      <masked>false</masked>
+      <name>depotOrigine</name>
+   </variable>
+</TestCaseEntity>

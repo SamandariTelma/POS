@@ -29,6 +29,7 @@ public class FindList {
 			println optionText
 			if (optionText.equals(optionToFind)) {
 				option.click()
+				break;
 			}
 		}
 	}
@@ -38,6 +39,19 @@ public class FindList {
 			String optionText = option.getText()
 			println optionText
 			WebUI.verifyMatch(optionText, optionToFind, false)
+		}
+	}
+	@Keyword
+	public verifyIfContainResult(def objectElement,def optionToFind) {
+		boolean isExist = false
+		for (def option : objectElement) {
+			String optionText = option.getText()
+			println optionText
+			if (optionText.equals(optionToFind)) {
+				isExist = true
+				break;
+				WebUI.verifyEqual(isExist, true)
+			}
 		}
 	}
 }

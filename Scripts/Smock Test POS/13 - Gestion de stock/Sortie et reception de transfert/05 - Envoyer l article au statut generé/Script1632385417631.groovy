@@ -17,7 +17,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 
-String curentDate = new SimpleDateFormat('dd').format(Calendar.getInstance().getTime())
+String curentDate = new SimpleDateFormat('d').format(Calendar.getInstance().getTime())
 
 /*
 WebUI.callTestCase(findTestCase('Smock Test POS/00 - Called Tests Case/Connexion a POS'), [:], FailureHandling.CONTINUE_ON_FAILURE)
@@ -52,11 +52,11 @@ WebUI.callTestCase(findTestCase('Smock Test POS/13 - Gestion de stock/Sortie et 
 'Cliquer sur le bouton loupe et récuperer l\'Imei du produit'
 WebUI.click(findTestObject('Pages Gestion de stock/Page ordre de transfert/Tableau de produit ajouté/Bouton loupe'))
 
-WebUI.verifyElementPresent(findTestObject('Pages Gestion de stock/Page ordre de transfert/Popin liste des numéros/id produit'),
-	3)
+WebUI.verifyElementPresent(findTestObject('Pages Gestion de stock/Page ordre de transfert/Popin liste des numéros/id produit'), 
+    3)
 
-String imeiProduit = WebUI.getText(findTestObject('Pages Gestion de stock/Page ordre de transfert/Popin liste des numéros/id produit'),
-	FailureHandling.CONTINUE_ON_FAILURE)
+String imeiProduit = WebUI.getText(findTestObject('Pages Gestion de stock/Page ordre de transfert/Popin liste des numéros/id produit'), 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
 println('IMEI :' + imeiProduit)
 
@@ -66,12 +66,14 @@ WebUI.click(findTestObject('Pages Gestion de stock/Page ordre de transfert/Popin
 
 'Je reviens dans le champ "Recherche liste des transferts"'
 String referenceTR = WebUI.getText(findTestObject('Pages Gestion de stock/Page Recherche liste transfert (Sortie)/File d ariane reference TR'))
-GlobalVariable.referenceTR=referenceTR
+
+GlobalVariable.referenceTR = referenceTR
 
 WebUI.click(findTestObject('Pages Gestion de stock/Page Recherche liste transfert (Sortie)/File d ariane Liste de TR'))
 
 'Affichage de la page liste transfert'
-WebUI.verifyElementPresent(findTestObject('Pages Gestion de stock/Page Recherche liste transfert (Sortie)/Titre page'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Pages Gestion de stock/Page Recherche liste transfert (Sortie)/Titre page'), 
+    10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('Pages Gestion de stock/Page Recherche liste transfert (Sortie)/Tableau de résultat/Réference TR généré - 1ere ligne'), 
     3, FailureHandling.STOP_ON_FAILURE)
@@ -146,6 +148,8 @@ for (def jours : joursDuCalendrier) {
 
     if (jourCal.equals(curentDate)) {
         jours.click()
+
+        break
     }
 }
 
@@ -181,12 +185,13 @@ WebUI.click(findTestObject('Pages Gestion de stock/Page Recherche liste transfer
 GlobalVariable.dateEnvoi = new SimpleDateFormat('M/d/yyyy').format(Calendar.getInstance().getTime())
 
 'Je vérifie que la référence transferée ne devrait plus apparaître dans la liste des transferts dans sortie transfert'
-String referenceTR2=WebUI.getText(findTestObject('Pages Gestion de stock/Page Recherche liste transfert (Sortie)/Tableau de résultat/Réference TR généré - 1ere ligne'), 
+String referenceTR2 = WebUI.getText(findTestObject('Pages Gestion de stock/Page Recherche liste transfert (Sortie)/Tableau de résultat/Réference TR généré - 1ere ligne'), 
     FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyNotMatch(referenceTR, referenceTR2, false)
 
 'Je vérifie que le Statut article "ALLOUE TR" qui devient Statut "EN TRANSIT/A LIVRER'
 WebUI.callTestCase(findTestCase('Smock Test POS/13 - Gestion de stock/Sortie et reception de transfert/03 - Vérification statut article'), 
-    [('statutAttendu') : 'En transit/A livrer', ('imei') : GlobalVariable.imei, ('depot') : GlobalVariable.depotEnvoyeur], FailureHandling.CONTINUE_ON_FAILURE)
+    [('statutAttendu') : 'En transit/A livrer', ('imei') : GlobalVariable.imei, ('depot') : GlobalVariable.depotEnvoyeur], 
+    FailureHandling.CONTINUE_ON_FAILURE)
 

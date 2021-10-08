@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Démo</name>
+   <name>TNR POS</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>c568e79b-ca5f-49c9-908c-d5969ebf988e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Smock Test POS/13 - Gestion de stock/Sortie et reception de transfert/01 - Ajouter article ou ordre de Transfert</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -44,7 +44,7 @@
    <testCaseLink>
       <guid>25453189-8697-4f9a-b71d-6582a2325be0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Smock Test POS/13 - Gestion de stock/Sortie et reception de transfert/02 - Ajouter d autre article</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -74,7 +74,7 @@
    <testCaseLink>
       <guid>23c7ce3f-20d5-423c-8786-ab44d530b540</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Smock Test POS/13 - Gestion de stock/Sortie et reception de transfert/03 - Vérification statut article</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -98,7 +98,7 @@
    <testCaseLink>
       <guid>1b23a970-88b5-4329-8dd2-82d425e6f1b5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Smock Test POS/13 - Gestion de stock/Sortie et reception de transfert/04 - Annuler l article au statut generé</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -194,7 +194,7 @@
    <testCaseLink>
       <guid>071a6de2-95b3-4c0a-b117-66e0f41d89c3</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Smock Test POS/13 - Gestion de stock/Sortie et reception de transfert/05 - Envoyer l article au statut generé</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -236,7 +236,7 @@
    <testCaseLink>
       <guid>55d9bdbb-f6d8-4abe-9dd1-22f5a77473c3</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Smock Test POS/13 - Gestion de stock/Sortie et reception de transfert/09 - Filtrer les résultats TR-Reception</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -248,7 +248,7 @@
    <testCaseLink>
       <guid>541ddd68-b49f-4757-ab50-ea7580f5105a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Smock Test POS/13 - Gestion de stock/Sortie et reception de transfert/10 - Receptionner le TR</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>

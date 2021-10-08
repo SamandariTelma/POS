@@ -45,7 +45,7 @@ WebUI.waitForElementPresent(findTestObject('Pages Gestion de stock/Page Recherch
     3)
 
 WebUI.scrollToElement(findTestObject('Pages Gestion de stock/Page Recherche liste transfert (Sortie)/Formulaire de recherche/option MOBKITPREPAID'), 
-    0)
+    3)
 
 WebUI.click(findTestObject('Pages Gestion de stock/Page Recherche liste transfert (Sortie)/Formulaire de recherche/option MOBKITPREPAID'))
 
@@ -82,8 +82,12 @@ WebUI.click(findTestObject('Pages Gestion de stock/Page Recherche liste transfer
 
 WebUI.verifyElementPresent(findTestObject('Pages Gestion de stock/Page Visualusation detail reception/Titre page'), 10)
 
+//WebUI.verifyElementText(findTestObject('Pages Gestion de stock/Page Visualusation detail reception/Info code sage'), codeSageARecherche)
 'Vérifier que le code sage correspond au code sage filtré'
-WebUI.verifyElementText(findTestObject('Pages Gestion de stock/Page Visualusation detail reception/Info code sage'), codeSageARecherche)
+codeSageFiltre = WebUiCommonHelper.findWebElements(findTestObject('Pages Gestion de stock/Page Visualusation detail reception/Info code sage'), 
+    5)
+
+CustomKeywords.'util.FindList.verifyIfContainResult'(codeSageFiltre, codeSageARecherche)
 
 'Revenir sur le résultat du filtre en cliquant sur le fil d\'ariane Liste de transferts'
 WebUI.click(findTestObject('Pages Gestion de stock/Page Recherche liste transfert (Sortie)/File d ariane Liste de TR'))
