@@ -83,7 +83,7 @@ WebUI.verifyElementText(findTestObject('Page Gestion des Numéros de Série-/Tab
 WebUI.verifyElementText(findTestObject('Page Gestion des Numéros de Série-/Tableau de resultat/IMEI/Statut premiere ligne'), 
     statutAttendu)
 
-'Vérifier que le dépôt est correspond au dépôt de l\'article'
+'Vérifier que le dépôt correspond au dépôt de l\'article'
 WebUI.verifyElementText(findTestObject('Page Gestion des Numéros de Série-/Tableau de resultat/IMEI/Dépôt premiere ligne'), 
     depot)
 

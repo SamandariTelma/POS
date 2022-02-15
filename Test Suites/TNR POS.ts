@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>c568e79b-ca5f-49c9-908c-d5969ebf988e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Smock Test POS/13 - Gestion de stock/Sortie et reception de transfert/01 - Ajouter article ou ordre de Transfert</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -44,7 +44,7 @@
    <testCaseLink>
       <guid>25453189-8697-4f9a-b71d-6582a2325be0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Smock Test POS/13 - Gestion de stock/Sortie et reception de transfert/02 - Ajouter d autre article</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -74,7 +74,7 @@
    <testCaseLink>
       <guid>23c7ce3f-20d5-423c-8786-ab44d530b540</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Smock Test POS/13 - Gestion de stock/Sortie et reception de transfert/03 - Vérification statut article</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -98,13 +98,13 @@
    <testCaseLink>
       <guid>1b23a970-88b5-4329-8dd2-82d425e6f1b5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Smock Test POS/13 - Gestion de stock/Sortie et reception de transfert/04 - Annuler l article au statut generé</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b492515c-4b72-44a6-a71b-dfdec01a14b3</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Smock Test POS/13 - Gestion de stock/Sortie et reception de transfert/05 - Envoyer l article au statut generé</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -134,7 +134,7 @@
    <testCaseLink>
       <guid>bfadaeec-004f-47b8-bc05-ebac698560b4</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Smock Test POS/13 - Gestion de stock/Sortie et reception de transfert/06 - Consulter le détail de transfert</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -182,7 +182,7 @@
    <testCaseLink>
       <guid>4ed95588-a3c5-4623-a46f-48ff3cb843a6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Smock Test POS/13 - Gestion de stock/Sortie et reception de transfert/07 - Annuler le transfert depuis la page de reception</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -224,7 +224,7 @@
    <testCaseLink>
       <guid>7e94e8cd-7004-48a5-bcd8-52e63e166e9d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Smock Test POS/13 - Gestion de stock/Sortie et reception de transfert/08 - Filtrer les résultats TR-Sortie</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>

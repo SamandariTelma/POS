@@ -16,22 +16,22 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>A definir</description>
-      <initValue>'Thas4e@1425'</initValue>
+      <initValue>'Thas4e@1426'</initValue>
       <name>loginPassword</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>A definir</description>
-      <initValue>'MOBGSM VIDA S45 SMARTPHONE'</initValue>
+      <initValue>'MOBGSM VIDA S9 4G SMARTPHONE'</initValue>
       <name>codeSage1</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>A definir</description>
-      <initValue>'TERMINAL-00040'</initValue>
+      <initValue>'TERMINAL-00282'</initValue>
       <name>codeArticle1</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>A definir</description>
-      <initValue>'GSM TELMA F1XS4G'</initValue>
+      <initValue>'GSM VIDA S9 4G SMARTPHONE (TELMA S-MAX)'</initValue>
       <name>libelle1</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
